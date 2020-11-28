@@ -1,73 +1,92 @@
-body {
-    background-color: #282c34;
-    color: white;
-    padding: 40px;
-    font-family: Arial;
- 
-  }
- 
- button{
-   padding: 5%;
-    width:40%;
-   background-color: #af4c91;
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline;
-   font-size: 1em;
-   border-radius: 12px;
-  }
-  input{
-    padding: 5%;
-    text-align: center;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 16px;
-    border-radius: 12px;
-   width: 40%;
-   margin: 8px 0;
-   box-sizing: border-box;
-   background-color: cornsilk;
-   color:black;
-   border-radius: 12px;
-   
-   
- }
- 
- 
- card img {
-   
-   margin: 20px;
-   display:inline;
-   height: 30%;
-   width:50%;
-   border-radius: 12px
-   
- }
- 
- .recipes{
-   display: flex;
-   justify-content: space-around;
-   border-radius: 12px;
-   flex-wrap: wrap;
- 
- }
- /*ol{
-  text-align:left;
- 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }*/
-  
 
+  body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif,
+    
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+    font-family: "Verdana", cursive, sans-serif;
+    color:#af60bb;
+  }
+  
+  body {
+    background-color: #ffc593;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .app {
+ 
+ 
+
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .score-section {
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+  }
+  
+  /* QUESTION/TIMER/LEFT SECTION */
+  .question-section {
+    width: 100%;
+    position: relative;
+  }
+  
+  .question-count {
+    margin-bottom: 5px;
+  }
+  
+  .question-count span {
+    font-size: 5px;
+  }
+  
+  .question-text {
+    margin-bottom: 12px;
+  }
+  
+ 
+  
+  button {
+    display: inline;
+    position: relative;
+    width: 100px;
+    font-size: 16px;
+    color:white;
+     background-color: #af60bb;
+    border-radius: 15px;
+
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    
+    cursor: pointer;
+  }
+  
+ 
+  
+  button:hover {
+    background-color: #555e7d;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button svg {
+    margin-right: 5px;
+  }
   
   
   
@@ -81,6 +100,10 @@ body {
     margin:0;
        border-radius: 12px;
   }
+  nav.image{
+    display:inline-block;
+
+  }
   div{
     position: relative;
     text-align: center;
@@ -93,40 +116,22 @@ body {
     display:inline-block;
     margin: 20px;
     position: relative;
-    background-color: blueviolet;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff4dd;
+   
     transition: 0.3s;
-    width:30%;
+    width:80%;
+    height: 80%;
     border-radius: 12px
   }
-  table th, td,tr {
-    border-spacing: 10px;
-    border: 1px solid rgb(100, 98, 105);
-
-
-    
-  }
   
-    table{
-      width: 100%;
-      border-collapse: collapse;
-    }
-    tr{
-      height: 100px;
-      width: 60px;
-    }
-    th, td {
-      padding: 15px;
-      text-align: left;
-    }
-   .quote{
-     padding:5%;
-     margin:20px;
-     
-   }
+
+  
+  
+  
+    
    .App-logo{
      width: 60%;
-     height: 50%;
+     height: 30%;
 
    }
    .App-logo2{
@@ -134,8 +139,4 @@ body {
     height: 50%;
 
   }
-  .feel{
-    margin: 10%;
-    font-size:150px;
-    position: absolute;
-  } 
+ 

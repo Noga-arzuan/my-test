@@ -1,41 +1,138 @@
 
-import React from "react";
-import axios from "axios";
-import aboutImg from "../Images/about2.jpg"
-import Recipe from "./Recipe";
+
+import React, { useState } from 'react';
+import Feel1 from "./Feel1";
+  
+
+export default function Home() {
+  
 
 
 
-class Home extends React.Component {
-  constructor(props){
-    super(props)
-    this.state=({value:"",data:[]})
+  const questions = [
+      {
+          questionText: 'אני מרגישה שאני נמצאת במערכת יחסים שבה אני יכולה להביע את עצמי ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: false },
+              { answerText: 'לא נכון', isCorrect: true },
+
+          ],
+      },
+
+      {
+
+          questionText: 'אני מרגישה שאין לי זמן לעשות עוד דברים שאני אוהבת מלבד להיפגש עם בן זוגי ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: true },
+              { answerText: 'לא נכון', isCorrect: false },
+
+          ],
+      },
+
+      {
+          questionText: 'אני מרגישה שבן זוגי תומך בי ובמעשים שלי',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: false },
+              { answerText: 'לא נכון', isCorrect: true },
+
+          ],
+
+      },
+
+      {
+          questionText: 'בן הזוג שלי לא  אוהב לשמוע מה שאני חושבת ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: true },
+              { answerText: 'לא נכון', isCorrect: false },
+
+          ],
+      },
+
+
+      {
+          questionText: 'בן הזוג שלי לא  מפרגן לי שיש לי פעילויות אחרות שלא קשורות למערכת היחסים שלנו ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: true },
+              { answerText: 'לא נכון', isCorrect: false },
+
+          ],
+      },
+
+
+      {
+          questionText: 'בן הזוג שלי שולח לי המון הודעות במשך היום ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: true },
+              { answerText: 'לא נכון', isCorrect: false },
+
+          ],
+      },
+
+      {
+          questionText: 'לי ולבן זוגי אין כמעט ריבי ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: false },
+              { answerText: 'לא נכון', isCorrect: true },
+
+          ],
+      },
+
+      {
+          questionText: ' בן זוגי לרוב מודה כשהוא טועה ',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: false },
+              { answerText: 'לא נכון', isCorrect: true },
+
+          ],
+      },
+
+      {
+          questionText: ' בן זוגי מדבר בלי בעיה על דברים שגורמים לו להראות לא טוב',
+          answerOptions: [
+              { answerText: 'נכון', isCorrect: false },
+              { answerText: 'לא נכון', isCorrect: true },
+
+          ],
+      },
+  ];
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+	const [showScore, setShowScore] = useState(false);
+	const [score, setScore] = useState(0);
+
+ 
+const handleAnswerOptionClick = (isCorrect) => {
+  if (isCorrect) {
+    setScore(score + 1);
   }
-   handleOnClick = async() => {
-    const APP_ID = "01b159db";
-      const API_KEY = " 661a4d9495d5b5915081d2aadf4d2386";
-      
-    const fetchData = await axios.get( `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${this.state.value}`);
-    this.setState({ data: fetchData.data.hits});
-    console.log(fetchData.hits);
-    
-   }
-    handleChange =(event) => {
-      this.setState({value: event.target.value});
-  };
-  render(){
-    return <div>
-        
-      <input className="input" value={this.state.value} onChange={this.handleChange}/>
-      <button className="button" onClick={this.handleOnClick}>Search Recipe </button>
-      
-    <form>
 
-    </form>
-    {this.state.data.slice(0,9).map(recipe=>(
-      <Recipe recipe={recipe}/>
-    ))}
-     <img src={aboutImg} className="App-logo2" alt="logo" />
-   </div>
-      }}
-  export default Home;
+  const nextQuestion = currentQuestion + 1;
+  if (score<2) {
+    setCurrentQuestion(nextQuestion); 
+  } else {
+    setShowScore(true);
+  }
+};
+return (
+  <div className="card">
+    {showScore ? (
+      <div className='score-section'>
+       <Feel1/>
+      </div>
+    ) : (
+      <>
+        <div className='question-section'>
+          <div className='question-count'>
+            <span>Question {currentQuestion + 1}</span>/{questions.length}
+          </div>
+          <div className='question-text'>{questions[currentQuestion].questionText}</div>
+        </div>
+        <div className='answer-section'>
+          {questions[currentQuestion].answerOptions.map((answerOption) => (
+            <button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
+          ))}
+        </div>
+      </>
+    )}
+  </div>
+);
+}
