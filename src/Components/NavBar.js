@@ -4,8 +4,8 @@ import aboutImg from "./../Images/logo.png";
 
 function NavBar(){
     return(
-        <nav>
-                        <img src={aboutImg} className="App-logo" alt="logo" />
+        <nav className='nav'>
+                         <img src={aboutImg} className="App-logo" alt="logo" />
         <ul>
           
           <li><Link to="/">Home</Link></li>

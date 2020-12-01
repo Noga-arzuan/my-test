@@ -1,7 +1,7 @@
 
 
     import React, { useState } from 'react';
-
+    import About from "./About"
     
     export default function Feel4() {
       
@@ -91,15 +91,16 @@
       const nextQuestion = currentQuestion + 1;
       if (score<300) {
         setCurrentQuestion(nextQuestion); 
-      } else {
-        setShowScore(true);
+    
+      
+           }else {  setShowScore(true);
       }
     };
     return (
-      <div className='card'>
+      <div className='app'>
         {showScore ? (
           <div className='score-section'>
-           {/* <App/> */}
+           <About/>
           </div>
         ) : (
           <>

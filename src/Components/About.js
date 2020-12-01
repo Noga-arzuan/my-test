@@ -1,24 +1,35 @@
-import React from "react"
-
+import React, { useState } from 'react';
 const About = () => {
 
-    return <div>
+    return <div className='app'>
      
 
  
-       <h1>About Us</h1> 
-        <p> We at myHome restaurant wants to let<br/>
-            you plain, control and enjoy all of your daily meals
-             for you and your family <br/>
-            At  myHome restart we believe that food <br/>
-            is the thing that occupies you more<br/>
-            than anything else in your life, and that you<br/>
-             delicate to it a lot of your 
-            time, almost every day and definitely every week.<br/>
-           We believe that we can give you happy tools
-          to make it fun to you and  your beloved one </p>
-      
-
+       <h1 className='header'>לפרוש כנפיים ולעוף</h1> 
+        <p className='sumery'> נראה שאת רואה כמה סימני אזהרה של קשר זוגי פוגעני
+ 
+ .אל תתעלמי מהדגלים האדומים האלה
+ .משהו שמתחיל בקטן יכול להחמיר עם הזמן 
+ ,שום מערכת יחסים אינה מושלמת, היא דורשת עבודה 
+ .אך במערכת יחסים בריאה לא תמצאי התנהגויות פוגעות
+ 
+ הצעד הראשון הוא לשוחח עם אדם אחר מחוץ למערכת היחסים 
+ .ולשתף במה שעובר עלייך 
+ .את לא צריכה להיות לבד, אנחנו כאן כדי לעזור לך 
+ 
+ :את יכולה לבחור מה הכי נכון לך מהאפשרויות הבאות 
+ בלחיצה כאן תועברי למסך בו יחכה עבורך טקסט קצר אותו תוכלי לשלוח לאדם קרוב שאת סומכת עליו (חבר/ה, 
+ .קרוב/ת משפחה או כל אדם אחר שתבחרי)
+ ,לבחירתך SMS הטקסט ישלח במייל או בהודעת
+ .ממספר אנונימי ולא ישאיר עקבות
+ .זכרי - יצירת קשר עם אדם נוסף יכולה להציל את חייך 
+ להעדפתך, את יכולה להתקשר ל- 118 או לשלוח הודעה 
+ .ל- 055-7000128, 24 שעות ביממה
+ .במוקד יושבים אנשי מקצוע שיוכלו לייעץ לך </p>
+ 
+ 
+ 
+ 
       </div>
     
 }

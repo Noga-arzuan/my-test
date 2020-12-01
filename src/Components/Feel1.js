@@ -158,7 +158,7 @@ const handleAnswerOptionClick = (isCorrect) => {
   }
 
   const nextQuestion = currentQuestion + 1;
-  if (score<20) {
+  if (score<30) {
     setCurrentQuestion(nextQuestion); 
   } else {
     setShowScore(true);
