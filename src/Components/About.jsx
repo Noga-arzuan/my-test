@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
+
 const About = () => {
 
-    return <div className='app'>
+    return <div className=' flex-container'>
      
 
- 
-       <h1 className='header'>לפרוש כנפיים ולעוף</h1> 
-        <p className='sumery'> נראה שאת רואה כמה סימני אזהרה של קשר זוגי פוגעני
+       <h3 class="truncate col s4 m2">לפרוש כנפיים ולעוף</h3> 
+        <p class="center-align">
+           <span>  נראה שאת רואה כמה סימני אזהרה של קשר זוגי פוגעני</span>
  
  .אל תתעלמי מהדגלים האדומים האלה
  .משהו שמתחיל בקטן יכול להחמיר עם הזמן 

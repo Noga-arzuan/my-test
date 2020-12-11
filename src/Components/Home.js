@@ -1,154 +1,42 @@
-
-
-import React, { useState } from 'react';
-import Feel1 from "./Feel1";
-import About from"./About";
-  
-
-export default function Home() {
-  
-
-
-
-  const questions = [
-      {
-          questionText: 'אני מרגישה שאני נמצאת במערכת יחסים שבה אני יכולה להביע את עצמי ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: false },
-              { answerText: 'לא נכון', isCorrect: true },
-
-          ],
-      },
-
-      {
-
-          questionText: 'אני מרגישה שאין לי זמן לעשות עוד דברים שאני אוהבת מלבד להיפגש עם בן זוגי ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: true },
-              { answerText: 'לא נכון', isCorrect: false },
-
-          ],
-      },
-
-      {
-          questionText: 'אני מרגישה שבן זוגי תומך בי ובמעשים שלי',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: false },
-              { answerText: 'לא נכון', isCorrect: true },
-
-          ],
-
-      },
-
-      {
-          questionText: '                                   בן הזוג שלי לא  אוהב לשמוע מה שאני חושבת ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: true },
-              { answerText: 'לא נכון', isCorrect: false },
-
-          ],
-      },
-
-
-      {
-          questionText: 'בן הזוג שלי לא  מפרגן לי שיש לי פעילויות אחרות שלא קשורות למערכת היחסים שלנו ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: true },
-              { answerText: 'לא נכון', isCorrect: false },
-
-          ],
-      },
-
-
-      {
-          questionText: 'בן הזוג שלי שולח לי המון הודעות במשך היום ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: true },
-              { answerText: 'לא נכון', isCorrect: false },
-
-          ],
-      },
-
-      {
-          questionText: 'לי ולבן זוגי אין כמעט ריבי ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: false },
-              { answerText: 'לא נכון', isCorrect: true },
-
-          ],
-      },
-
-      {
-          questionText: '                           בן זוגי לרוב מודה כשהוא טועה ',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: false },
-              { answerText: 'לא נכון', isCorrect: true },
-
-          ],
-      },
-
-      {
-          questionText: ' בן זוגי מדבר בלי בעיה על דברים שגורמים לו להראות לא טוב',
-          answerOptions: [
-              { answerText: 'נכון', isCorrect: false },
-              { answerText: 'לא נכון', isCorrect: true },
-
-          ],
-      },
-  ];
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-	const [showScore, setShowScore] = useState(false);
-	const [score, setScore] = useState(0);
-  const finishNow=questions.length
- 
-  const handleAnswerOptionClick = (isCorrect) => {
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-    
-    const nextQuestion = currentQuestion + 1;
-  if (score<3) {
-    setCurrentQuestion(nextQuestion); 
-  } else {
-    setShowScore(true);
-  }
-
-   
-};
+import React from 'react';
+import {Link} from 'react-router-dom';
+import 'materialize-css/dist/css/materialize.min.css';
+import {EmailIcon ,FacebookIcon,FacebookMessengerIcon,LinkedinIcon,WhatsappIcon,TwitterIcon}from"react-share";
+import {EmailShareButton, LinkedinShareButton,  TwitterShareButton,FacebookShareButton,  WhatsappShareButton}from "react-share";
 
 
 
 
-  return (
- 
-    <div className='app'>
-   
-            
-     
-      {showScore ? (
-        <div className='score-section'>
-         <Feel1/>
-        </div>
-      ) : (
-        <>
-          <div className='question-section'>
 
-            <div className='question-count'>
-              <span>Question {currentQuestion + 1}</span>/{questions.length} 
-            </div>
-            <div className='question-text'>{questions[currentQuestion].questionText}</div>
-          </div>
-          <div className='answer-section'>
-            {questions[currentQuestion].answerOptions.map((answerOption) => (
-              <button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-              
 
-            ))}
-            
-          </div>
-        </>
-      )}
+function Menu(){
+
+
+
+    return <div >
+      <div class="share">
       
-    </div>
-  );
-  }
+      <h1 className="menu">שמחות שבאת</h1>
+
+          <button className="start"> <Link to="Menu">התחילי השאלון</Link> </button>
+</div>
+
+<div className="share">
+  <h6>מכירה חברה שהנושא יכול להיות </h6>
+   <h6>? קרוב לליבה</h6>
+  <h6>שתפי איתה את השאלון</h6>
+  
+<EmailIcon size={32} round={true} />
+<FacebookIcon size={32} round={true} />
+<WhatsappIcon size={32} round={true} />
+<TwitterIcon size={32} round={true} />
+<LinkedinIcon size={32} round={true} />
+
+
+
+</div>
+</div>
+
+}
+
+export  default  Menu;

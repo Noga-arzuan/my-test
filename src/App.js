@@ -1,29 +1,38 @@
 
 
 import React from 'react';
-import { Route, Switch,BrowserRouter as Router} from 'react-router-dom';
+import { Route, Switch,BrowserRouter as Router,Redirect} from 'react-router-dom';
 import NavBar from "./Components/NavBar";
 import Menu from "./Components/Menu";
 
 import About from "./Components/About";
 import Home from "./Components/Home";
 import "./App.css";
+import 'materialize-css/dist/css/materialize.min.css';
+import FirstStage from "./Components/firstStage";
 //import { LinkContainer } from 'react-router-bootstrap';
-
+import  styles from "./appStyles.module.css";
 
 
   class App extends React.Component {
     render(){
       return(
-        <div className="app1">
-     
+        <div className="app">
+       
+   
+          
+        
         <Router>
           <NavBar/>
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route   exact path="/"component={Home}/>
+          <Route  path="/menu" component={Menu}/>
+
      
-          <Route path="/about" component={About}/>
-          <Route  path="/Menu" component={Menu}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/FirstStage" component={FirstStage}/>
+
+        
         </Switch>
         </Router>
         </div>

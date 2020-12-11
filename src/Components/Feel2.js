@@ -2,6 +2,8 @@
 
     import React, { useState } from 'react';
     import Feel3 from "./Feel3";
+    import SecondStage from "./SecondStage ";
+
 
     
     export default function Feel2() {
@@ -13,8 +15,8 @@
           {
               questionText:'אני מקבלת מבן הזוג שלי המון הודעות וטלפונים בצורה מוגזמת/אובססיבית',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: true },
-                  { answerText: 'לא נכון', isCorrect: false },
+                  { answerText: 'כן', isCorrect: true },
+                  { answerText: 'לא ', isCorrect: false },
     
               ],
           },
@@ -23,8 +25,8 @@
               questionText:'בן הזוג שלי חושב שאני משקיעה בעצמי יותר מידי (בעבודה, בלבוש, בלימודים, בבילויים)',
     
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: true },
-                  { answerText: 'לא נכון', isCorrect: false },
+                  { answerText: 'כן', isCorrect: true },
+                  { answerText: 'לא ', isCorrect: false },
     
               ],
           },
@@ -32,8 +34,8 @@
           {
               questionText:'בן הזוג שלי גורם לי להרגיש שאני יכולה לעשות הכל בצורה נכונה',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: false },
-                  { answerText: 'לא נכון', isCorrect: true },
+                  { answerText: 'כן', isCorrect: false },
+                  { answerText: 'לא ', isCorrect: true },
     
               ],
     
@@ -42,8 +44,8 @@
           {
               questionText:'בן הזוג שלי לא מזלזל במה שאני מרגישה',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: false },
-                  { answerText: 'לא נכון', isCorrect: true },
+                  { answerText: 'כן', isCorrect: false },
+                  { answerText: 'לא ', isCorrect: true },
     
               ],
           },
@@ -52,8 +54,8 @@
           {
               questionText:'אני מרגישה שאני בן אדם פחות חופשי ממה שהרגשתי לפני היחסים',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: true },
-                  { answerText: 'לא נכון', isCorrect: false },
+                  { answerText: 'כן', isCorrect: true },
+                  { answerText: 'לא ', isCorrect: false },
     
               ],
           },
@@ -62,8 +64,8 @@
           {
               questionText:'אני מרגישה שיש חשיבות לדעה שלי, ולרוב בן זוגי ואני מחליטים החלטות משותפות ',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: false },
-                  { answerText: 'לא נכון', isCorrect: true },
+                  { answerText: 'כן', isCorrect: false },
+                  { answerText: 'לא ', isCorrect: true },
     
               ],
           },
@@ -71,8 +73,8 @@
           {
               questionText:'בן הזוג שלי מעליב אותי',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: true },
-                  { answerText: 'לא נכון', isCorrect: false },
+                  { answerText: 'כן', isCorrect: true },
+                  { answerText: 'לא ', isCorrect: false },
     
               ],
           },
@@ -80,8 +82,8 @@
           {
               questionText:'בן הזוג שלי יורד עליי או גורם לי להרגיש קטנה',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: true },
-                  { answerText: 'לא נכון', isCorrect: false },
+                  { answerText: 'כן', isCorrect: true },
+                  { answerText: 'לא ', isCorrect: false },
     
               ],
           },
@@ -89,40 +91,40 @@
           {
               questionText:'בן הזוג שלי גורם לי להרגיש שאני לא יכולה לעשות שום דבר בצורה נכונה',
               answerOptions: [
-                  { answerText: 'נכון', isCorrect: true },
-                  { answerText: 'לא נכון', isCorrect: false },
+                  { answerText: '', isCorrect: true },
+                  { answerText: 'לא ', isCorrect: false },
     
               ],
           },
           {
               questionText:'בן זוגי אף פעם לא מעיר לי על  צורת הלבוש שלי ',
             answerOptions: [
-                { answerText: 'נכון', isCorrect: false },
-                { answerText: 'לא נכון', isCorrect: true },
+                { answerText: 'כן', isCorrect: false },
+                { answerText: 'לא ', isCorrect: true },
   
             ],
         },
         {
             questionText:'בן הזוג שלי בודק הרבה פעמים עם מי אני נפגשת או מדברת',
             answerOptions: [
-                { answerText: 'נכון', isCorrect: true },
-                { answerText: 'לא נכון', isCorrect: false },
+                { answerText: 'כן', isCorrect: true },
+                { answerText: 'לא ', isCorrect: false },
   
             ],
         },
         {
             questionText:'בן זוגי מסתכל על הודעות ומיילים שלי, ולא  חוקר אותי לגביהם ',
             answerOptions: [
-                { answerText: 'נכון', isCorrect: false },
-                { answerText: 'לא נכון', isCorrect: true },
+                { answerText: 'כן', isCorrect: false },
+                { answerText: 'לא ', isCorrect: true },
   
             ],
         },
         {
             questionText:'בן הזוג מאוכזב ולא מרוצה ממני לעתים קרובות',
             answerOptions: [
-                { answerText: 'נכון', isCorrect: true },
-                { answerText: 'לא נכון', isCorrect: false },
+                { answerText: 'כן', isCorrect: true },
+                { answerText: 'לא ', isCorrect: false },
   
             ],
         },
@@ -145,7 +147,9 @@
       }
     };
     return (
+      <div class="container">
       <div className='app'>
+         {(score===0)?<SecondStage/>:showScore}
         {showScore ? (
           <div className='score-section'>
            <Feel3/>
@@ -165,6 +169,7 @@
             </div>
           </>
         )}
+      </div>
       </div>
     );
     }
