@@ -16,7 +16,7 @@ body{
 #inline_buttons{
   border: 1px solid #ccc;
   border-width: 1px 0px;
-  padding: 10px 20px;
+  padding: 0px 0px;
   text-align: center;
   display: inline-block;
   
@@ -32,9 +32,9 @@ body{
       border-color: inherit;
       display: block;
       background: #fff;
-      top: 100%;
+      top: 10%;
       white-space: nowrap;
-      left: 50%;
+      left: 10%;
       transform: translateX(-50%);
       padding: 5px 15px;
       border-radius: 5px;
@@ -85,14 +85,14 @@ body{
 #fixed_buttons{
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 10px;
   
   a{
     display: block;
-    height: 40px;
-    width: 40px;
+    height: 5px;
+    width: 5px;
     text-align: center;
-    line-height: 40px;
+    line-height: 5px;
     color: #fff;
     transition: all .3s;
     box-sizing: content-box;

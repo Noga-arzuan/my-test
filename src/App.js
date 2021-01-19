@@ -8,10 +8,11 @@ import Menu from "./Components/Menu";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import "./App.css";
-import 'materialize-css/dist/css/materialize.min.css';
-import FirstStage from "./Components/firstStage";
-//import { LinkContainer } from 'react-router-bootstrap';
-import  styles from "./appStyles.module.css";
+// import 'materialize-css/dist/css/materialize.min.css';
+
+
+
+
 
 
   class App extends React.Component {
@@ -27,10 +28,11 @@ import  styles from "./appStyles.module.css";
         <Switch>
           <Route   exact path="/"component={Home}/>
           <Route  path="/menu" component={Menu}/>
+           <Route  path="/about" component={About}/>
+   
+        
 
-     
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/FirstStage" component={FirstStage}/>
+
 
         
         </Switch>

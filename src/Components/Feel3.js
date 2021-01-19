@@ -1,5 +1,4 @@
 
-
     import React, { useState } from 'react';
     import Feel4 from "./Feel4";
     import TirdStage from "./TirdStage";
@@ -11,7 +10,7 @@
     
     
       const questions = [
-        //  questionText:בן זוגי מבקש ממני לא להיפגש עם גברים אחרים חוץ ממנו: גברים בעבודה, ידידים וכו',
+        //  questionText: 'בן זוגי מבקש ממני לא להיפגש עם גברים אחרים חוץ ממנו: גברים בעבודה, ידידים וכו',
         //   {
         //       answerOptions: [
         //           { answerText: 'כן', isCorrect: true },
