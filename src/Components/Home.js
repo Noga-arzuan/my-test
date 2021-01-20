@@ -25,7 +25,7 @@ function Home(){
         <span></span>
         </h1>
 
-          <button className="start"> <Link to="Menu">התחילי את השאלון</Link> </button>
+          <button className="share"> <Link to="Menu">התחילי את השאלון</Link> </button>
 </div>
 </section>
 <div className="share">

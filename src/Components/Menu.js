@@ -53,10 +53,10 @@ export default function Menu() {
 
 
       {
-          questionText: 'בן הזוג שלי לא  מפרגן לי שיש לי פעילויות אחרות שלא קשורות למערכת היחסים שלנו ',
+          questionText:' בן הזוג שלי מפרגן לי שיש לי פעילויות אחרות שלא קשורות למערכת היחסים שלנו',
           answerOptions: [
-              { answerText: 'כן', isCorrect: true },
-              { answerText: 'לא ', isCorrect: false },
+              { answerText: 'כן', isCorrect: false },
+              { answerText: 'לא ', isCorrect: true },
 
           ],
       },

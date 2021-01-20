@@ -13,28 +13,22 @@
 }
 body {
 
-  
-
-    
-
-    text-align: center;
-
- 
   text-align: center;
-
-  color:#af60bb;
-
-  background-color: #ffc593;
-   background-color:rgb(238, 214, 163) ;
+text-align: center;
+ color:#af60bb;
+ background-color: #ffc593;
+  background-color:rgb(238, 214, 163) ;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .app {
-  padding: 20px;
-  margin: 20px;
+  
+  
+  padding:10%;
+  margin: 5%;
   height: 80%;
-  width: 100%;
+  width:80%;
   text-align: center;
   border-radius: 15px;
   display: inline-block;
@@ -67,10 +61,7 @@ div {
   padding-top:100px;
   margin:1%;
   text-align: center;
-
-
-
-  font-size: 24px;
+ font-size: 24px;
   text-align: center;
 
 
@@ -105,7 +96,6 @@ button {
   padding: 15px;
   margin:20px;
   
-
   justify-content: flex-start;
   align-items: center;
 
@@ -114,7 +104,8 @@ button {
 .start {
   display: inline;
   position: relative;
-  width: 100px;
+  width:300px;
+
   font-size: 16px;
   color:blanchedalmond;
   background-color: #4B0082;
@@ -218,8 +209,10 @@ animation-delay: 5s;
   animation-delay: 1s;
 }
   
-.share.button{
- width:0px;
+.share button{
+ widows:55%;
+ height: 50%;
+ font-size: 16px;
  
 }
  
@@ -268,4 +261,37 @@ animation-delay: 5s;
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+}
+.emergencyExit false{
+  background: #ea3535 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    border-radius: 8px;
+    opacity: 1;
+    color: #fff;
+    border: hidden;
+    padding: 14px 40px;
+    font-size: 27px;
+}
+@media screen and (max-width: 600px)
+   { emergencyExit {
+    padding: 8px 13px!important;
+    font-size: 1.2rem!important;
+    }
+  }
+ 
+ .timerNote{
+  text-align: right;
+ 
+  color: #af60bb;
+
+  font-weight: 600;
+  cursor: default;
+}
+
+  
+  @media screen and (max-width: 600px)
+{timerNote {
+    font-size: .9rem;
+    font-weight: 500;
+}
 }
