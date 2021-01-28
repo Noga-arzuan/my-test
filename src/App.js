@@ -8,7 +8,7 @@ import Menu from "./Components/Menu";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import "./App.css";
-// import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/css/materialize.min.css';
 
 
 

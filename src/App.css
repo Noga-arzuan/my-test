@@ -9,26 +9,26 @@
   letter-spacing: 3px;
   word-spacing: 10px;
   text-shadow: 2px 2px 5px palevioletred;
-  text-align: justify;
+  text-align: center;
 }
 body {
 
-  text-align: center;
+text-align: right;
 text-align: center;
  color:#af60bb;
  background-color: #ffc593;
   background-color:rgb(238, 214, 163) ;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
 }
 .app {
   
   
-  padding:10%;
-  margin: 5%;
+  padding:20px;
+  margin: 20px;
   height: 80%;
-  width:80%;
+  width:100%;
   text-align: center;
   border-radius: 15px;
   display: inline-block;
@@ -45,24 +45,26 @@ div {
 .question-section {
   width: 500px;
   height: 200px;
-  width:400px;
+  width:600px;
   height: 450px;
   position: relative;
   text-align: justify;
   background-color: white;
 }
 
-/* .question-count {
-
-} */
+ .question-count { 
+  margin-bottom: 5px;
+    text-align: right;
+} 
 
 .question-text {
-  padding: 1%;
+  padding: 100px;
   padding-top:100px;
   margin:1%;
-  text-align: center;
+  text-align: right;
  font-size: 24px;
   text-align: center;
+  justify-content: center;
 
 
 }
@@ -181,6 +183,15 @@ nav li{
    
   text-align: center;
 
+   position: relative;
+   animation: text_reveal .1s ease forwards;
+   animation-delay: 1s;
+ }
+ share h6{
+  display:block;
+   
+  text-align: center;
+font-size: large;
    position: relative;
    animation: text_reveal .1s ease forwards;
    animation-delay: 1s;

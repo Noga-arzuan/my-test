@@ -1,53 +1,38 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-// import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/css/materialize.min.css';
 import {EmailIcon ,FacebookIcon,LinkedinIcon,WhatsappIcon,TwitterIcon}from"react-share";
-import {EmailShareButton, LinkedinShareButton, FacebookShareButton, TwitterShareButton ,WhatsappShareButton}from "react-share";
-// import {FacebookButton,FacebookCount} from "react-social";
+import {EmailShareButton,LinkedinShareButton,TwitterShareButton,FacebookShareButton,WhatsappShareButton}from "react-share";
 
 
 
 
 
-function Home(){
-  let url = "https://github.com";
 
 
-    return <div >
-      <section id="share">
-      <div className="share" >
-
+function Menu(){
+ 
+    
+    return <div>
+      <div class="share">
       
-      <h1>שמחות
-        <span></span>
-        </h1>
-      <h1>שבאת
-        <span></span>
-        </h1>
+      <h1 className="menu">שמחות שבאת</h1>
 
-          <button className="share"> <Link to="Menu">התחילי את השאלון</Link> </button>
+          <button className="start"> <Link to="Menu">התחילי השאלון</Link> </button>
+      
 </div>
-</section>
+
 <div className="share">
-  <h1>מכירה חברה שהנושא יכול להיות </h1>
-   <h1>קרוב לליבה? </h1>
-  <h1>שתפי איתה את השאלון</h1>
-  <FacebookShareButton  
- url={url} appId={209396587441120}>
-  <FacebookIcon size={32} round={true}/> 
- </FacebookShareButton>
-{/* <EmailIcon size={32} round={true} /> */}
-{/* </EmailShareButton> */}
-<WhatsappShareButton
- url={url} appId={209396587441120}>
+  <h6>מכירה חברה שהנושא </h6>
+   <h6> קרוב לליבה</h6>
+  <h6>שתפי איתה את השאלון</h6>
+  
+<EmailIcon size={32} round={true} />
+<FacebookIcon size={32} round={true} />
 <WhatsappIcon size={32} round={true} />
-</WhatsappShareButton>
-<TwitterShareButton>
 <TwitterIcon size={32} round={true} />
-</TwitterShareButton>
-  <LinkedinShareButton>
 <LinkedinIcon size={32} round={true} />
-</LinkedinShareButton>
+
 
 
 </div>
@@ -55,4 +40,4 @@ function Home(){
 
 }
 
-export  default  Home;
+export  default  Menu;

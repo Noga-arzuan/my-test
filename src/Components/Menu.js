@@ -1,15 +1,16 @@
 
-import React, { useState } from 'react';
+import React ,{useEffect, useState } from 'react';
 import Feel1 from "./Feel1";
 import FirstStage from "./firstStage";
 import 'materialize-css/dist/css/materialize.min.css';
+import { MenuList } from '@material-ui/core';
 
 
 
 
 export default function Menu() {
   
- 
+  
  
 
   const questions = [
@@ -24,7 +25,7 @@ export default function Menu() {
 
       {
 
-          questionText: 'אני מרגישה שאין לי זמן לעשות עוד דברים שאני אוהבת מלבד להיפגש עם בן זוגי ',
+          questionText: 'אני מרגישה שאין לי זמן לעשות  דברים שאני אוהבת  לעשות  ',
           answerOptions: [
               { answerText: 'כן', isCorrect: true },
               { answerText: 'לא ', isCorrect: false },
@@ -53,7 +54,7 @@ export default function Menu() {
 
 
       {
-          questionText:' בן הזוג שלי מפרגן לי שיש לי פעילויות אחרות שלא קשורות למערכת היחסים שלנו',
+          questionText:' בן זוגי  מפרגן  לי שיש לי פעילויות  שלא קשורות למערכת היחסים שלנו',
           answerOptions: [
               { answerText: 'כן', isCorrect: false },
               { answerText: 'לא ', isCorrect: true },
@@ -99,25 +100,39 @@ export default function Menu() {
       },
   ];
  
+    
   const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   // const [toggle,setToggle]=useState(false);
-  // const[formKey,setFormKey]=useState(5);
+
+  useEffect(() => {
+    console.log('yaa')
+  },[currentQuestion])
+    
+     
+    
+    
+
+
+  
+
     const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
     
+    
     const nextQuestion = currentQuestion + 1;
-  if (score<3) {
+  if (score<6) {
     setCurrentQuestion(nextQuestion); 
+    
     
   } else {
     setShowScore(true);
   }
 
- 
+  
 };
 
 
@@ -129,7 +144,7 @@ export default function Menu() {
     <div className='app' >
     
 
-   {currentQuestion>5?<FirstStage/>:showScore}
+   {currentQuestion===7?<FirstStage/>:showScore}
  
       {showScore ? (
         <div className='score-section' class="col s8 m4">
@@ -147,7 +162,7 @@ export default function Menu() {
           <div className='answer-section'>
             {questions[currentQuestion].answerOptions.map((answerOption) => (
              <button class="col s6 m3"  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</button>
-              
+          
 
             ))}
           </div>
@@ -157,4 +172,4 @@ export default function Menu() {
     </div>
     </div>
   );
-  }
+           }
