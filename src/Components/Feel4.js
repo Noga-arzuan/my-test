@@ -98,11 +98,9 @@ const handleAnswerOptionClick = (isCorrect) => {
 return (
   <div class="container">
   <div className='app'>
-     
+  {currentQuestion===5? <RedFlage/>:showScore}
     {showScore ? (
-     
-             
-      <div className='score-section'>
+          <div className='score-section'>
   <RedFlage/>
    </div>
     

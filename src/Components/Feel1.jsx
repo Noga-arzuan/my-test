@@ -157,7 +157,7 @@ const handleAnswerOptionClick = (isCorrect) => {
   }
 
   const nextQuestion = currentQuestion + 1;
-  if (score<30) {
+  if (score<25) {
     setCurrentQuestion(nextQuestion); 
   } else {
     setShowScore(true);
@@ -168,7 +168,7 @@ const handleAnswerOptionClick = (isCorrect) => {
   return (
     <div class="container">
     <div className='app'>
-         {currentQuestion>5?<SecondStage/>:showScore}
+         {currentQuestion===7?<SecondStage/>:showScore}
   
       {showScore ? (
         <div className='score-section'>

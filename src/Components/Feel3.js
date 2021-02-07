@@ -212,7 +212,7 @@
     return (
         <div class="container">
       <div className='app'>
-                 {currentQuestion>5?<TirdStage/>:showScore}
+                 {currentQuestion===7?<TirdStage/>:showScore}
 
         {showScore ? (
           <div className='score-section'>

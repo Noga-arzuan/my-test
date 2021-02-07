@@ -104,17 +104,10 @@ export default function Menu() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-  // const [toggle,setToggle]=useState(false);
 
-  useEffect(() => {
-    console.log('yaa')
-  },[currentQuestion])
+ 
     
      
-    
-    
-
-
   
 
     const handleAnswerOptionClick = (isCorrect) => {
@@ -124,7 +117,7 @@ export default function Menu() {
     
     
     const nextQuestion = currentQuestion + 1;
-  if (score<6) {
+  if (score<5) {
     setCurrentQuestion(nextQuestion); 
     
     
