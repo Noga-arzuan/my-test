@@ -1,8 +1,7 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import Feel1 from './Feel1';
 import FirstStage from './firstStage';
 import 'materialize-css/dist/css/materialize.min.css';
-import { MenuList } from '@material-ui/core';
 
 export default function Menu() {
   const [currentQuestion, setCurrentQuestion] = useState(0);

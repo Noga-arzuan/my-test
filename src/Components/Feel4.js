@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 import RedFlage from './RedFlage';
-import {
-  EmailShareButton,
-  FacebookShareButton,
-  WhatsappShareButton,
-  LinkedinShareButton,
-} from 'react-share';
 
 export default function Feel4() {
   const questions = [
