@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import aboutImg from './../Images/logo.png';
 
 function NavBar() {
+
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      window.open("https://www.google.com/", "_self");
+    }, 600000);
+
+  });
+
+
+
+
   return (
     <nav>
       <div className='nav-wrapper'>
