@@ -18,12 +18,16 @@ function NavBar() {
 
   return (
     <nav>
-      <div className='nav-wrapper'>
-        <img src={aboutImg} className='App-logo' alt='logo' />
-        <div></div>
-
+      <div className='nav-wrapper' style={{display:"flex",flexDirection:"column",justifyContent:"space-evenly"}}>
+        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+          
         <button className='emergencyExit false'>לסגירת הטופס</button>
-        <ul id='nav-mobile' className='left hide-on-med-and-down'>
+        <img src={aboutImg} className='App-logo' alt='logo' />
+        </div>
+        
+        <div style={{display:"flex",justifyContent:"space-between"}}>
+          <div className='timerNote'>לביטחונך השאלון מאובטח ויסגר תוך:</div>
+           <ul id='nav-mobile' className='left hide-on-med-and-down'>
           <li>
             <Link to='/'>Home</Link>
           </li>
@@ -37,7 +41,9 @@ function NavBar() {
             <Link to='/Menu'>Menu</Link>
           </li>
         </ul>
-        <div className='timerNote'>לביטחונך השאלון מאובטח ויסגר תוך:</div>
+        
+        </div>
+       
       </div>
     </nav>
   );

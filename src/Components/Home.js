@@ -5,10 +5,9 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 function Menu() {
   return (
-    <div>
+    <div style={{display:"flex",alignItems:"center",flexDirection:"column"}}>
       <div className='share'>
         <h1 className='menu'>שמחות שבאת</h1>
-
         <button className='start'>
           {' '}
           <Link to='Menu'>התחילי השאלון</Link>{' '}

@@ -6,45 +6,30 @@
   box-sizing: border-box;
   font-family: 'Heebo', sans-serif;
   direction: rtl;
-  letter-spacing: 3px;
+
   word-spacing: 10px;
   text-shadow: 2px 2px 5px palevioletred;
   text-align: center;
 }
 body {
-  text-align: right;
-  text-align: center;
+  
   color: #af60bb;
-  background-color: #ffc593;
   background-color: rgb(238, 214, 163);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .app {
-  padding: 20px;
-  margin: 20px;
-  height: 80%;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto 15px auto;
   text-align: center;
   border-radius: 15px;
   display: inline-block;
   border: 5px black;
   background-color: blanchedalmond;
-
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
-}
-div {
-  position: relative;
-  text-align: right;
 }
 
 .question-section {
-  width: 500px;
-  height: 200px;
-  width: 600px;
-  height: 450px;
-  position: relative;
+  width: 100%;
+
   text-align: justify;
   background-color: white;
 }
@@ -77,7 +62,7 @@ div {
 
 button {
   display: inline;
-  position: relative;
+  
   width: 100px;
   font-size: 16px;
   color: white;
@@ -93,9 +78,34 @@ button {
 
   cursor: pointer;
 }
+.iconeStyle{
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:30px;
+  height:30px;
+  border-radius:80%;
+  background-color:#1976d2;
+}
+.MuiStep-completed:nth-child(1) .iconeStyle {
+  background-color: #09ff00;
+}
+.MuiStep-completed:nth-child(2) .iconeStyle {
+  background-color: #cfea35;
+}
+.MuiStep-completed:nth-child(3) .iconeStyle {
+  background-color: #ffee00;
+}
+.MuiStep-completed:nth-child(4) .iconeStyle {
+  background-color: #f8a304;
+}
+.MuiStep-completed:nth-child(5) .iconeStyle {
+  background-color: #ea3535;
+}
 .start {
   display: inline;
-  position: relative;
+  
   width: 300px;
 
   font-size: 16px;
@@ -126,12 +136,12 @@ nav li {
 }
 
 .card {
-  position: relative;
+  
   padding: 0%;
   padding: 60%;
   display: inline-block;
   margin: 20px;
-  position: relative;
+  
   background-color: #fff4dd;
   background-color: rgb(255, 0, 157);
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
@@ -146,7 +156,7 @@ nav li {
   border: 5px black;
 }
 .share {
-  position: relative;
+  
   display: inline-block;
   width: 90%;
   height: 35%;
@@ -170,16 +180,16 @@ nav li {
 
   text-align: center;
 
-  position: relative;
+  
   animation: text_reveal 0.1s ease forwards;
   animation-delay: 1s;
 }
-share h6 {
+.share h6 {
   display: block;
 
   text-align: center;
   font-size: large;
-  position: relative;
+  
   animation: text_reveal 0.1s ease forwards;
   animation-delay: 1s;
 }
@@ -208,9 +218,8 @@ share h6 {
 }
 
 .share button {
-  widows: 55%;
   width: auto;
-  height: 50%;
+
   font-size: 16px;
   margin: 0 5px;
 }
@@ -251,9 +260,13 @@ share h6 {
 
 /*End keyframes*/
 .container {
-  margin: 0 auto;
+  background-color: #fff;
   max-width: 1280px;
-  width: 90%;
+  width: 100%;
+}
+.main-container{
+  background-color: #fff;
+  margin: auto 0;
 }
 .emergencyExit false {
   background: #ea3535 0 0 no-repeat padding-box;
@@ -274,7 +287,7 @@ share h6 {
 
 .timerNote {
   text-align: right;
-
+  margin-right:10px;
   color: #af60bb;
 
   font-weight: 600;

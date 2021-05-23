@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Feel2 from './Feel2';
 import SecondStage from './SecondStage ';
-
-export default function Feel1() {
+import CustomStepper from './Stepper';
+export default function Feel1(props) {
   const questions = [
     {
       questionText:
@@ -138,7 +138,6 @@ export default function Feel1() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 5);
@@ -148,32 +147,32 @@ export default function Feel1() {
     if (score < 25) {
       setCurrentQuestion(nextQuestion);
     } else {
+      
       setShowScore(true);
     }
   };
-
   return (
     <div className='container'>
-      <div className='app'>
+     
         {currentQuestion === 7 ? (
           <SecondStage />
         ) : showScore ? (
           <div className='score-section'>
+            {props.handleNext}
             <Feel2 props />
           </div>
         ) : (
           <>
             <div className='question-section'>
-              <div className='question-count'>
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
-              </div>
+            <CustomStepper stepNum={2}/>
               <div className='question-text'>
                 {questions[currentQuestion].questionText}
               </div>
             </div>
             <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
+              {questions[currentQuestion].answerOptions.map((answerOption,key) => (
                 <button
+                  key={key}
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)
                   }
@@ -184,7 +183,7 @@ export default function Feel1() {
             </div>
           </>
         )}
-      </div>
+ 
     </div>
   );
 }
