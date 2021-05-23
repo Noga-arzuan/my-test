@@ -287,3 +287,8 @@ share h6 {
     font-weight: 500;
   }
 }
+
+
+.sendBtn{
+  width: auto;
+}
