@@ -300,3 +300,8 @@ nav li {
     font-weight: 500;
   }
 }
+
+
+.sendBtn{
+  width: auto;
+}
