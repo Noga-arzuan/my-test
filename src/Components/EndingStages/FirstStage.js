@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FirstStage = (props) => {
+const FirstStage = () => {
   return (
     <div className='about col s12 m6'>
       <h1 className='header'>לפרוש כנפיים ולעוף</h1>

@@ -16,9 +16,7 @@ function SendMsg(props) {
                 <div class="form-group purple-border">
                     <textarea class="form-control" id="exampleInputMessage1" rows="10" value={txtMsg} onChange={(e) => setTxtMsg(e.target.value)} />
                 </div>
-
                 <button type="button" class="btn btn-primary sendBtn" onClick={() => sendWhatsApp()}>שלחי הודעת whatsapp</button>
-                
             </form>
         </div>
     )

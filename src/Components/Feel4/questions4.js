@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-import RedFlage from './RedFlage';
-import CustomStepper from './Stepper';
-export default function Feel4() {
-  const questions = [
+export const questions = [
     {
       questionText:
         'בן הזוג שלי מצלם אותי בסיטואציות פרובקטיביות ללא הסכמתי ומאיים שישלח את זה לאנשים אם אחשוב להיפרד ממנו  ',
@@ -61,55 +57,3 @@ export default function Feel4() {
       ],
     },
   ];
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-  const [score, setScore] = useState(0);
-
-  const handleAnswerOptionClick = (isCorrect) => {
-    if (isCorrect) {
-      setScore(score + 100);
-    }
-
-    const nextQuestion = currentQuestion + 1;
-    if (score < 300) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setShowScore(true);
-    }
-  };
-  return (
-    <div className='container'>
-
-      {currentQuestion === 5 ? (
-        <RedFlage />
-      ) : showScore ? (
-        <div className='score-section'>
-          <RedFlage />
-        </div>
-      ) : (
-        <>
-          <div className='question-section'>
-            <CustomStepper stepNum={5} />
-            <div className='question-text'>
-              {questions[currentQuestion].questionText}
-            </div>
-          </div>
-          <div className='answer-section'>
-            {questions[currentQuestion].answerOptions.map((answerOption, key) => (
-              <button
-                key={key}
-                onClick={() =>
-
-                  handleAnswerOptionClick(answerOption.isCorrect)
-                }
-              >
-                {answerOption.answerText}
-              </button>
-            ))}
-          </div>
-        </>
-      )
-      }
-    </div >
-  );
-}

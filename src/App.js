@@ -1,10 +1,9 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import Menu from './Components/Menu';
-
-import About from './Components/About';
-import Home from './Components/Home';
+import Menu from './Pages/Menu/Menu';
+import About from './Pages/About/About';
+import Home from './Pages/Home/Home';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
 

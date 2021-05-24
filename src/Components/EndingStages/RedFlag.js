@@ -1,7 +1,7 @@
 import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 
-const RedFlage = () => {
+const RedFlag = () => {
   return (
     <div className=' flex-container'>
       <h1 className='center-align'>לפרוש כנפיים ולעוף</h1>
@@ -35,4 +35,4 @@ const RedFlage = () => {
     </div>
   );
 };
-export default RedFlage;
+export default RedFlag;
