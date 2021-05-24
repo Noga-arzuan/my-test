@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Feel4 from './Feel4';
 import TirdStage from './TirdStage';
+import CustomStepper from './Stepper';
+
 
 export default function Feel3() {
   const questions = [
@@ -198,6 +200,8 @@ export default function Feel3() {
         ) : (
           <>
             <div className='question-section'>
+              <CustomStepper stepNum={4} />
+
               <div className='question-count'>
                 <span>Question {currentQuestion + 1}</span>/{questions.length}
               </div>
@@ -206,8 +210,9 @@ export default function Feel3() {
               </div>
             </div>
             <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
+              {questions[currentQuestion].answerOptions.map((answerOption, key) => (
                 <button
+                  key={key}
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)
                   }

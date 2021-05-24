@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import RedFlage from './RedFlage';
+import CustomStepper from './Stepper';
 
 export default function Feel4() {
   const questions = [
@@ -89,6 +90,7 @@ export default function Feel4() {
         ) : (
           <>
             <div className='question-section'>
+              <CustomStepper stepNum={4} />
               <div className='question-count'>
                 <span>Question {currentQuestion + 1}</span>/{questions.length}
               </div>
@@ -97,8 +99,10 @@ export default function Feel4() {
               </div>
             </div>
             <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
+              {questions[currentQuestion].answerOptions.map((answerOption, key) => (
+
                 <button
+                  key={key}
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)
                   }

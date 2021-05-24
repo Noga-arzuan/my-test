@@ -79,35 +79,37 @@ export default function Feel4() {
   };
   return (
     <div className='container'>
-      
-        {currentQuestion === 5 ? (
+
+      {currentQuestion === 5 ? (
+        <RedFlage />
+      ) : showScore ? (
+        <div className='score-section'>
           <RedFlage />
-        ) : showScore ? (
-          <div className='score-section'>
-            <RedFlage />
+        </div>
+      ) : (
+        <>
+          <div className='question-section'>
+            <CustomStepper stepNum={5} />
+            <div className='question-text'>
+              {questions[currentQuestion].questionText}
+            </div>
           </div>
-        ) : (
-          <>
-            <div className='question-section'>
-            <CustomStepper stepNum={5}/>
-              
-              <div className='question-text'>
-                {questions[currentQuestion].questionText}
-              </div>
-            </div>
-            <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <button
-                  onClick={() =>
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
+          <div className='answer-section'>
+            {questions[currentQuestion].answerOptions.map((answerOption, key) => (
+              <button
+                key={key}
+                onClick={() =>
+
+                  handleAnswerOptionClick(answerOption.isCorrect)
+                }
+              >
+                {answerOption.answerText}
+              </button>
+            ))}
+          </div>
+        </>
+      )
+      }
+    </div >
   );
 }

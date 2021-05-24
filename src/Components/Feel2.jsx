@@ -129,35 +129,35 @@ export default function Feel2() {
   };
   return (
     <div className='container'>
-    
-        {currentQuestion === 7 ? (
-          <SecondStage />
-        ) : showScore ? (
-          <div className='score-section'>
-            <Feel3 props />
+
+      {currentQuestion === 7 ? (
+        <SecondStage />
+      ) : showScore ? (
+        <div className='score-section'>
+          <Feel3 props />
+        </div>
+      ) : (
+        <>
+          <div className='question-section'>
+            <CustomStepper stepNum={3} />
+            <div className='question-text'>
+              {questions[currentQuestion].questionText}
+            </div>
           </div>
-        ) : (
-          <>
-            <div className='question-section'>
-            <CustomStepper stepNum={3}/>
-              
-              <div className='question-text'>
-                {questions[currentQuestion].questionText}
-              </div>
-            </div>
-            <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <button
-                  onClick={() =>
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-      </div>
+          <div className='answer-section'>
+            {questions[currentQuestion].answerOptions.map((answerOption, key) => (
+              <button
+                key={key}
+                onClick={() =>
+                  handleAnswerOptionClick(answerOption.isCorrect)
+                }
+              >
+                {answerOption.answerText}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
   );
 }
