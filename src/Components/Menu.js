@@ -22,8 +22,8 @@ export default function Menu() {
       questionText:
         'אני מרגישה שאני נמצאת במערכת יחסים שבה אני יכולה להביע את עצמי ',
       answerOptions: [
-        { answerText: 'כן', isCorrect: false },
-        { answerText: 'לא ', isCorrect: true },
+        { answerText: 'מסכימה', isCorrect: false },
+        { answerText: 'לא מסכימה', isCorrect: true },
       ],
     },
 
@@ -95,37 +95,37 @@ export default function Menu() {
 
   return (
     <div className='main-container'>
-        {currentQuestion === 7 ? (
-          <FirstStage   /> 
-        ) : showScore ? (
-          <div className='score-section col s8 m4'>
-            <Feel1 />
+      {currentQuestion === 7 ? (
+        <FirstStage />
+      ) : showScore ? (
+        <div className='score-section col s8 m4'>
+          <Feel1 />
+        </div>
+      ) : (
+        <>
+          <div className='question-section'>
+            <CustomStepper stepNum={1} />
+            <div className='question-text'>
+              {questions[currentQuestion].questionText}
+            </div>
           </div>
-        ) : (
-          <>
-            <div className='question-section'>
-              <CustomStepper stepNum={1}/>
-              <div className='question-text'>
-                {questions[currentQuestion].questionText}
-              </div>
-            </div>
-            <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption,key) => (
-                <button
+          <div className='answer-section'>
+            {questions[currentQuestion].answerOptions.map((answerOption, key) => (
+              <button
                 key={key}
-                  className='col s6 m3'
-                  onClick={() =>{
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
+                className='col s6 m3'
+                onClick={() => {
+                  handleAnswerOptionClick(answerOption.isCorrect)
                 }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
-   
+                }
+              >
+                {answerOption.answerText}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+
     </div>
   );
 }

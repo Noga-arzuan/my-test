@@ -8,8 +8,8 @@ export default function Feel2() {
       questionText:
         'אני מקבלת מבן הזוג שלי המון הודעות וטלפונים בצורה מוגזמת/אובססיבית',
       answerOptions: [
-        { answerText: 'כן', isCorrect: true },
-        { answerText: 'לא ', isCorrect: false },
+        { answerText: 'מסכימה', isCorrect: true },
+        { answerText: ' לא מסכימה', isCorrect: false },
       ],
     },
 
@@ -18,8 +18,8 @@ export default function Feel2() {
         'בן הזוג שלי חושב שאני משקיעה בעצמי יותר מידי (בעבודה, בלבוש, בלימודים, בבילויים)',
 
       answerOptions: [
-        { answerText: 'כן', isCorrect: true },
-        { answerText: 'לא ', isCorrect: false },
+        { answerText: 'מסכימה', isCorrect: true },
+        { answerText: 'לא מסכימה ', isCorrect: false },
       ],
     },
 
