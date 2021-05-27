@@ -1,23 +1,5 @@
-import React, { useState } from 'react';
-import Feel1 from './Feel1';
-import FirstStage from './firstStage';
-import 'materialize-css/dist/css/materialize.min.css';
-import CustomStepper from './Stepper';
 
-export default function Menu() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-  const [score, setScore] = useState(0);
-  const handleAnswerOptionClick = (isCorrect) => {
-    if (isCorrect) setScore(score + 1);
-    const nextQuestion = currentQuestion + 1;
-    if (score < 5) setCurrentQuestion(nextQuestion);
-    else {
-      setShowScore(true);
-    }
-  };
-
-  const questions = [
+export const questions = [
     {
       questionText:
         'אני מרגישה שאני נמצאת במערכת יחסים שבה אני יכולה להביע את עצמי ',
@@ -91,6 +73,7 @@ export default function Menu() {
         { answerText: 'לא ', isCorrect: true },
       ],
     },
+<<<<<<< HEAD:src/Components/Menu.js
   ];
 
   return (
@@ -129,3 +112,6 @@ export default function Menu() {
     </div>
   );
 }
+=======
+  ];
+>>>>>>> 709c06e37267c69bc60ce7c00704173b38201106:src/Pages/Menu/baseQuestions.js

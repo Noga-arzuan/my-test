@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShareBar } from './ShareBar';
+import { ShareBar } from '../../Components/ShareBar';
 import 'materialize-css/dist/css/materialize.min.css';
 
 function Menu() {

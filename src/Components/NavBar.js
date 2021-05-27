@@ -4,17 +4,11 @@ import aboutImg from './../Images/logo.png';
 
 function NavBar() {
 
-
   useEffect(() => {
-
     setTimeout(() => {
       window.open("https://www.google.com/", "_self");
     }, 600000);
-
   });
-
-
-
 
   return (
     <nav>
@@ -41,10 +35,8 @@ function NavBar() {
             <Link to='/Menu'>Menu</Link>
           </li>
         </ul>
-        
-        </div>
-       
       </div>
+     </div>
     </nav>
   );
 }

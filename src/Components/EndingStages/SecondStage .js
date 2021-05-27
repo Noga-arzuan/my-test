@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import SendMsg from "./SendMsg";
+import SendMsg from "../SendMsg";
 
 
 const SecondStage = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TirdStage = () => {
+const ThirdStage = () => {
   return (
     <div className="about">
       <h1 className="header">לפרוש כנפיים ולעוף</h1>
@@ -22,4 +22,4 @@ const TirdStage = () => {
     </div>
   );
 };
-export default TirdStage;
+export default ThirdStage;
