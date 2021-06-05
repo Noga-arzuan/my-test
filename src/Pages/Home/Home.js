@@ -5,17 +5,25 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 function Menu() {
   return (
-    <div style={{display:"flex",alignItems:"center",flexDirection:"column"}}>
+    <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+      <div style={{ backgroundImage: "url(/images/home.jpg)" }}>
+      </div>
       <div className='share'>
+
+
         <h1 className='menu'>שמחות שבאת</h1>
+
+
+
         <button className='start'>
           {' '}
           <Link to='Menu'>התחילי השאלון</Link>{' '}
         </button>
-      </div>
+      </div >
 
       <ShareBar />
-    </div>
+
+    </div >
   );
 }
 

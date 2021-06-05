@@ -20,7 +20,7 @@ export default function Menu() {
 
   return (
     <div className='main-container'>
-      {currentQuestion === 9 ? (
+      {currentQuestion === 7 ? (
         <FirstStage />
       ) : showScore ? (
         <div className='score-section col s8 m4'>

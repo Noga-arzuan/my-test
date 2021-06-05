@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Feel4 from '../Feel4/Feel4';
 import ThirdStage from '../EndingStages/ThirdStage';
 import CustomStepper from '../Stepper';
-import {questions} from './questions3'
+import { questions } from './questions3'
 
 
 export default function Feel3() {
-  
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -17,7 +17,7 @@ export default function Feel3() {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 200) {
+    if (score < 600) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);

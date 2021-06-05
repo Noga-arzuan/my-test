@@ -5,7 +5,7 @@ import CustomStepper from '../Stepper';
 import { questions } from './questions'
 
 export default function Feel1(props) {
-  
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -18,43 +18,43 @@ export default function Feel1(props) {
     if (score < 25) {
       setCurrentQuestion(nextQuestion);
     } else {
-      
+
       setShowScore(true);
     }
   };
   return (
     <div className='container'>
-     
-        {currentQuestion === 7 ? (
-          <SecondStage />
-        ) : showScore ? (
-          <div className='score-section'>
-            {props.handleNext}
-            <Feel2 props />
+
+      {currentQuestion === 7 ? (
+        <SecondStage />
+      ) : showScore ? (
+        <div className='score-section'>
+          {props.handleNext}
+          <Feel2 props />
+        </div>
+      ) : (
+        <>
+          <div className='question-section'>
+            <CustomStepper stepNum={2} />
+            <div className='question-text'>
+              {questions[currentQuestion].questionText}
+            </div>
           </div>
-        ) : (
-          <>
-            <div className='question-section'>
-            <CustomStepper stepNum={2}/>
-              <div className='question-text'>
-                {questions[currentQuestion].questionText}
-              </div>
-            </div>
-            <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption,key) => (
-                <button
-                  key={key}
-                  onClick={() =>
-                    handleAnswerOptionClick(answerOption.isCorrect)
-                  }
-                >
-                  {answerOption.answerText}
-                </button>
-              ))}
-            </div>
-          </>
-        )}
- 
+          <div className='answer-section'>
+            {questions[currentQuestion].answerOptions.map((answerOption, key) => (
+              <button
+                key={key}
+                onClick={() =>
+                  handleAnswerOptionClick(answerOption.isCorrect)
+                }
+              >
+                {answerOption.answerText}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+
     </div>
   );
 }
