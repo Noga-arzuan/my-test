@@ -13,7 +13,7 @@ export const questions = [
     questionText: 'אני מרגישה שאין לי זמן לעשות  דברים שאני אוהבת  לעשות  ',
     answerOptions: [
       { answerText: 'אין לי זמן', isCorrect: true },
-      { answerText: 'יש לי', isCorrect: false },
+      { answerText: ' יש לי זמן', isCorrect: false },
     ],
   },
 

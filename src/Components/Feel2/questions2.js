@@ -3,8 +3,8 @@ export const questions = [
     questionText:
       'אני מקבלת מבן הזוג שלי המון הודעות וטלפונים בצורה מוגזמת/אובססיבית',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'מקבלת', isCorrect: true },
+      { answerText: 'לא מקבלת ', isCorrect: false },
     ],
   },
 
@@ -13,8 +13,8 @@ export const questions = [
       'בן הזוג שלי חושב שאני משקיעה בעצמי יותר מידי (בעבודה, בלבוש, בלימודים, בבילויים)',
 
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'חושב', isCorrect: true },
+      { answerText: 'לא חושב ', isCorrect: false },
     ],
   },
 
@@ -38,8 +38,8 @@ export const questions = [
   {
     questionText: 'אני מרגישה שאני בן אדם פחות חופשי ממה שהרגשתי לפני היחסים',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'פחות חופשיה', isCorrect: true },
+      { answerText: 'חופשיה ', isCorrect: false },
     ],
   },
 

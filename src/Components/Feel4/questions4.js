@@ -3,8 +3,8 @@ export const questions = [
     questionText:
       'בן הזוג שלי מצלם אותי בסיטואציות פרובקטיביות ללא הסכמתי ומאיים שישלח את זה לאנשים אם אחשוב להיפרד ממנו  ',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'מצלם', isCorrect: true },
+      { answerText: 'לא מצלם', isCorrect: false },
     ],
   },
 
@@ -12,16 +12,16 @@ export const questions = [
     questionText: 'אני לא מרגישה שאני או בני משפחתי וחברי נמצאים בסכנה',
 
     answerOptions: [
-      { answerText: 'כן', isCorrect: false },
-      { answerText: 'לא ', isCorrect: true },
+      { answerText: 'נמצאים בסכנה', isCorrect: false },
+      { answerText: 'לא נמצאים בסכנה', isCorrect: true },
     ],
   },
 
   {
     questionText: 'אני חוששת שבן הזוג שלי יפגע בעצמו בגללי',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'יפגע בעצמו', isCorrect: true },
+      { answerText: 'לא יפגע בעצמו', isCorrect: false },
     ],
   },
 

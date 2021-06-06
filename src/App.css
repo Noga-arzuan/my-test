@@ -90,16 +90,16 @@ button {
   background-color: #09ff00;
 }
 .MuiStep-completed:nth-child(2) .iconeStyle {
-  background-color: #cfea35;
+  background-color: #ccd827;
 }
 .MuiStep-completed:nth-child(3) .iconeStyle {
-  background-color: #ffee00;
+  background-color: #e46a19;
 }
 .MuiStep-completed:nth-child(4) .iconeStyle {
   background-color: #f8a304;
 }
 .MuiStep-completed:nth-child(5) .iconeStyle {
-  background-color: #ea3535;
+  background-color: hsl(0, 94%, 52%);
 }
 .start {
   display: inline;

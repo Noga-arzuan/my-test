@@ -17,7 +17,7 @@ export default function Feel3() {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 600) {
+    if (score < 200) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
