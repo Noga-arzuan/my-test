@@ -9,11 +9,16 @@
   /* text-shadow: 2px 2px 5px palevioletred; */
   text-align: center;
 }
+
+#root {
+  width: 80vw;
+  margin: auto;
+}
+
 body {
   
   color: #FFE9E9;
   background-color:white;
- max-width: max-content;
   max-height: fit-content;
 }
 .app {
@@ -120,7 +125,7 @@ button {
   
   width: 200px;
   height: 50px;
-
+color: #af60bb;
   font-size: 16px;
   color: blanchedalmond;
   background-color: #D97373;
@@ -224,6 +229,10 @@ h6 {
   margin: 0 5px;
 }
 
+a {
+  color:white;
+}
+
 .about {
   border-radius: 12px;
 }
@@ -290,6 +299,9 @@ footer{
 }
 
 @media screen and (max-width: 600px) {
+  #root {
+    width: 100vw;
+  }
   timerNote {
     font-size: 0.9rem;
     font-weight: 500;
