@@ -32,7 +32,7 @@ function NavBar() {
 
           <img src={aboutImg} className='App-logo' alt='logo' />
         </div>
-        <div className='timerNote'>לביטחונך השאלון מאובטח ויסגר תוך:</div>
+        <div className='timerNote'>      לביטחונך השאלון מאובטח ויסגר תוך 10 דקות </div>
 
 
         <div style={{ display: "flex", justifyContent: "space-between" }}>

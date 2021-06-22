@@ -20,8 +20,16 @@ const FirstStage = () => {
         <a href='https://domestic-violence-program.org.il'>
           https://domestic-violence-program.org.il
         </a>
+        <br />
+
+        , את יכולה להתקשר
+        <b> עכשיו </b>
+        למספר 118 או לשלוח הודעה  <br />למספר טלפון:
+        055-7000128, 24 שעות ביממה. <br />
+        במוקד יושבים אנשי מקצוע שיוכלו לייעץ לך
       </p>
-    </div>
+
+    </div >
   );
 };
 export default FirstStage;
