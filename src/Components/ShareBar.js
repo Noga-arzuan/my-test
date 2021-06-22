@@ -14,9 +14,11 @@ import {
 export function ShareBar() {
   return (
     <div className='share'>
-      <h6>
-        מכירה חברה שהנושא קרוב לליבה?
-        <br /> שתפי איתה את השאלון
+      {/* <div className='timerNote'>לביטחונך השאלון מאובטח ויסגר תוך:</div> */}
+
+      <h6 >
+
+        מכירה חברה שצריכה עזרה?    <br /> שלחי גם לה את השאלון
       </h6>
       <EmailShareButton url={window.location.href}>
         <EmailIcon size={32} round={true} />
