@@ -10,10 +10,9 @@ function Footer() {
     return (
         <div classNme="footer-copyright">
             <ShareBar />
-            <div className="container footer">
-                © 2021 Copyright wings
+            <h6>      Copyright © 2021 Wings. All rights reserved </h6>
 
-            </div>
+
         </div>
 
 

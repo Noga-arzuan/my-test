@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   /* box-sizing: border-box; */
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Heebo';
   direction: rtl;
  
-  word-spacing: 10px;
+  /* word-spacing: 10px; */
   /* text-shadow: 2px 2px 5px palevioletred; */
   text-align: center;
 }
@@ -23,7 +23,7 @@ body {
 }
 .app {
   width: 100%;
-  
+  max-height: fit-content;
   /* margin-left: 12.5%; */
   /* margin-right: 12.5%; */
   margin: 0 auto 15px auto;
@@ -59,23 +59,22 @@ border-radius: 50px;
  color: #CEA5A5; 
 }
 .sumery {
-  font-size: large;
+  font-size:24px;
   text-indent: 50px;
   text-align: center;
-  letter-spacing: 3px;
-  word-spacing: 0.2m;
   text-shadow: 2px 2px 5px palevioletred;
   color: #9B6969;
   border-radius: 12px;
-  border-bottom:1px solid #af60bb;
-  
-  
 
+}
+h1{
+  margin:40px;
+  padding: 5px;
 }
 .header {
   font-weight: 800;
   font-style: italic;
-  color: #af60bb;;
+  color: #af60bb;
 }
 
 button {
@@ -153,7 +152,7 @@ nav li {
   text-decoration: none;
 }
 
-.card {
+/* .card {
   
   padding: 0%;
   padding: 60%;
@@ -170,14 +169,15 @@ nav li {
   text-align: right;
   text-align: center;
   border: 5px black;
-}
+} */
 .share1 {
   
   display: inline-block;
-  width: 90%;
+  width: 70%;
   height: 99%;
-  padding: 20px;
-   margin: 10px; 
+  padding:1%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
    border-radius: 12px; 
   color: #CEA5A5;
 
@@ -194,28 +194,11 @@ nav li {
   background-color:#FFE9E9;
   text-align: center;
 }
-.share h1 :nth-child(1) {
-  animation-delay: 3s;
-}
-.share h1 :nth-child(2) {
-  animation-delay: 5s;
-}
-
-.share h1 {
-  display: block;
-
-  text-align: center;
-
-  
-  animation: text_reveal 0.1s ease forwards;
-  animation-delay: 1s;
-}
 h6 {
   display: block;
  color:  #DE8585;
   text-align: center;
   font-size: large;
-  padding-top: 50PX;
   
   
  
@@ -229,15 +212,14 @@ h6 {
   margin: 0 5px;
 }
 
-a {
-  color:white;
-}
+
 
 .about {
   border-radius: 12px;
 }
 .a {
   width: 80%;
+  color: #905C5C;
 }
 .flex-container {
   justify-content: center;
@@ -253,9 +235,10 @@ a {
 .MuiStepper-horizontal {
 border-radius: 50px;
 }
-footer{
+.footer-copyright{
   background-color: #D97373;
   color: #af60bb;
+  height: 100px;
 }
 /*keyframes*/
 
@@ -268,9 +251,11 @@ footer{
 }
 .main-container{
   background-color: #fff;
-  /* margin: 40px; */
+  padding:30px;
+  margin-right: 30%;
   border: 1px solid #9F6F6F;
   border-radius: 50px;
+  width:600px;
 }
 .emergencyExit false {
   background: #ea3535 0 0 no-repeat padding-box;

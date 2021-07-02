@@ -4,11 +4,11 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 function customSetIcon(props) {
   const icons = {
-    1: 1,
-    2: 2,
-    3: 3,
-    4: 4,
-    5: 5
+    1: "",
+    2: "",
+    3: "",
+    4: "",
+    5: ""
   };
 
   return (

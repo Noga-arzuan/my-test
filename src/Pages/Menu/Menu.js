@@ -12,7 +12,7 @@ export default function Menu() {
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) setScore(score + 1);
     const nextQuestion = currentQuestion + 1;
-    if (score < 5) setCurrentQuestion(nextQuestion);
+    if (score < 7) setCurrentQuestion(nextQuestion);
     else {
       setShowScore(true);
     }
@@ -20,7 +20,7 @@ export default function Menu() {
 
   return (
     <div className='main-container'>
-      {currentQuestion === 7 ? (
+      {currentQuestion === 9 ? (
         <FirstStage />
       ) : showScore ? (
         <div className='score-section col s8 m4'>

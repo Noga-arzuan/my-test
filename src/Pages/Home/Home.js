@@ -4,11 +4,12 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 function Menu() {
   return (
-    <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
-      <div style={{ backgroundImage: "url(/images/home.jpg)" }}>
-      </div>
-      <div className='share1'>
 
+
+    <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
+
+
+      <div className='share1'>
 
         <h1 className='menu'>שמחות שבאת</h1>
 
