@@ -2,32 +2,39 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import aboutImg from './../Images/logo.png';
 
+<script type="text/javascript">
+        function disableBack() {
+          
+           window.history.forward()
+           
+        }
+        setTimeout("disableBack()", 0);
+        
+        window.onunload = function () { null };
+  </script>
+
 
 function NavBar() {
-
+  const emergencyExit = () =>{
+    //window.open('https://www.google.com/', '_blank', '');
+    document.getElementsByTagName ('html')[0].remove();
+    window.open('https://www.google.com', '_self');
+  }
 
   useEffect(() => {
     setTimeout(() => {
-      window.open("https://www.google.com/", "_self");
+      emergencyExit();
 
     }, 600000);
   });
-
-
-  function onClick() {
-    window.open("https://www.google.com/", "_self");
-
-  };
-
-
-
+  
   return (
 
     <nav>
       <div className='nav-wrapper' style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
-          <button className='emergencyExit false' onClick={onClick}>לסגירת הטופס</button>
+        <button className='emergencyExit false' onClick={() => emergencyExit()}>לסגירת הטופס</button>
 
 
           <img src={aboutImg} className='App-logo' alt='logo' />
