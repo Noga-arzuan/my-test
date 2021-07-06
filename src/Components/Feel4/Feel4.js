@@ -44,7 +44,7 @@ export default function Feel4() {
             <div className='answer-section'>
               {questions[currentQuestion].answerOptions.map((answerOption, key) => (
 
-                <button
+                <button className="wingsBtn"
                   key={key}
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)

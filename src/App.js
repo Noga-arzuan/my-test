@@ -7,7 +7,7 @@ import Home from './Pages/Home/Home';
 import Footer from './Components/Footer';
 
 import './App.css';
-import 'materialize-css/dist/css/materialize.min.css';
+//import 'materialize-css/dist/css/materialize.min.css';
 
 
 

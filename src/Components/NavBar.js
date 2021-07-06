@@ -34,7 +34,7 @@ function NavBar() {
       <div className='nav-wrapper' style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
-        <button className='emergencyExit false' onClick={() => emergencyExit()}>לסגירת הטופס</button>
+        <button className='emergencyExit false wingsBtn' onClick={() => emergencyExit()}>לסגירת הטופס</button>
 
 
           <img src={aboutImg} className='App-logo' alt='logo' />

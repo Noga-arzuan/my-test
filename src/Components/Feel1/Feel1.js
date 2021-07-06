@@ -42,7 +42,7 @@ export default function Feel1(props) {
           </div>
           <div className='answer-section'>
             {questions[currentQuestion].answerOptions.map((answerOption, key) => (
-              <button
+              <button className="wingsBtn"
                 key={key}
                 onClick={() =>
                   handleAnswerOptionClick(answerOption.isCorrect)

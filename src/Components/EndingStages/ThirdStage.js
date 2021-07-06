@@ -31,7 +31,7 @@ const ThirdStage = () => {
           <b>זכרי:</b>
            יצירת קשר עם אדם מחוץ למערכת היחסים
           יכולה להציל את חייך. <br/>
-          <button type="button" class="btn btn-link sendBtn" onClick={() => sendMsg()}>שליחת הודעה לאדם קרוב</button>
+          <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>שליחת הודעה לאדם קרוב</button>
           <br/>
           - אם אינך רוצה לפנות למישהו שאת מכירה ורוצה להישאר
           אנונימית, את יכולה להתקשר 

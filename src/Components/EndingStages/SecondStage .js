@@ -29,7 +29,7 @@ const SecondStage = () => {
             עבורך מכתב קצר אותו תוכלי לשלוח לאדם קרוב שאת סומכת עליו (חבר/ה קרוב/ה,
             קרוב/ת משפחה או כל אדם אחר שתבחרי).
             <br />
-            <button type="button" class="btn btn-link sendBtn" onClick={() => sendMsg()}>שליחת הודעה לאדם קרוב</button>
+            <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>שליחת הודעה לאדם קרוב</button>
             <br />
             <b>זכרי: </b>
             יצירת קשר עם אדם מחוץ למערכת היחסים יכולה להציל את

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Feel1 from '../../Components/Feel1/Feel1';
 import FirstStage from '../../Components/EndingStages/FirstStage';
-import 'materialize-css/dist/css/materialize.min.css';
+//import 'materialize-css/dist/css/materialize.min.css';
 import CustomStepper from '../../Components/Stepper';
 import { questions } from './baseQuestions'
 
@@ -38,7 +38,7 @@ export default function Menu() {
             {questions[currentQuestion].answerOptions.map((answerOption, key) => (
               <button
                 key={key}
-                className='col s6 m3'
+                className='col s6 m3 wingsBtn'
                 onClick={() => {
                   handleAnswerOptionClick(answerOption.isCorrect)
                 }
