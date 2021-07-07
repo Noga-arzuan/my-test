@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
+//import 'materialize-css/dist/css/materialize.min.css';
 import SendMsg from '../SendMsg';
 
 const RedFlag = () => {
@@ -39,7 +39,7 @@ const RedFlag = () => {
             <p className=' flex-container'>
               את יכולה לבחור מה הכי נכון לך מהאפשרויות הבאות{' '}
             </p>
-            <button type="button" class="btn btn-link sendBtn" onClick={() => sendMsg()}>בלחיצה כאן</button>
+            <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>בלחיצה כאן</button>
             <p className=' flex-container'>
               תועברי למסך בו יחכה עבורך טקסט קצר אותו תוכלי לשלוח לאדם קרוב שאת סומכת
               עליו (חבר/ה .קרוב/ת משפחה או כל אדם אחר שתבחרי) ,לבחירתך SMS הטקסט ישלח

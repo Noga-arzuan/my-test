@@ -24,7 +24,7 @@ function SendMsg(props) {
                 <div class="form-group purple-border">
                     <textarea ref={focusSendMagTxt} class="sendMsgToFriend" id="exampleInputMessage1"  value={txtMsg} onChange={(e) => setTxtMsg(e.target.value)} />
                 </div>
-                <button type="button" class="btn btn-primary sendBtn" onClick={() => sendWhatsApp()}>שלחי הודעת whatsapp</button>
+                <button type="button" class="btn btn-primary sendBtn wingsBtn" onClick={() => sendWhatsApp()}>שלחי הודעת whatsapp</button>
             </form>
         </div>
     )
