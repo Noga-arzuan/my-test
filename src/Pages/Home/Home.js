@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 //import 'materialize-css/dist/css/materialize.min.css';
 
-function Menu() {
+function Home() {
   return (
 
 
@@ -27,4 +27,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Home;
