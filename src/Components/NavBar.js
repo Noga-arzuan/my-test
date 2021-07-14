@@ -2,23 +2,11 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import aboutImg from './../Images/logo.png';
 
-<script type="text/javascript">
-        function disableBack() {
-          
-           window.history.forward()
-           
-        }
-        setTimeout("disableBack()", 0);
-        
-        window.onunload = function () { null };
-  </script>
-
-
 function NavBar() {
   const emergencyExit = () =>{
-    //window.open('https://www.google.com/', '_blank', '');
-    document.getElementsByTagName ('html')[0].remove();
-    window.open('https://www.google.com', '_self');
+    window.location.replace('https://www.google.com');
+    
+    return false;
   }
 
   useEffect(() => {

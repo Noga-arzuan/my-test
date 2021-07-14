@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 //import 'materialize-css/dist/css/materialize.min.css';
 
-function Menu() {
+function Home() {
   return (
 
 
@@ -15,9 +15,8 @@ function Menu() {
 
 
 
-        <button className='start'>
-          {' '}
-          <Link to='Menu'>בואי נתחיל!</Link>{' '}
+        <button className='wingsBtn'>
+          <Link to='Menu'>בואי נתחיל!</Link>
         </button>
       </div >
 
@@ -28,4 +27,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Home;
