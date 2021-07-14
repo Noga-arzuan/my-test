@@ -15,9 +15,8 @@ function Menu() {
 
 
 
-        <button className='start'>
-          {' '}
-          <Link to='Menu'>בואי נתחיל!</Link>{' '}
+        <button className='wingsBtn'>
+          <Link to='Menu'>בואי נתחיל!</Link>
         </button>
       </div >
 
