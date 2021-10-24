@@ -15,7 +15,7 @@ export default function Feel1(props) {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 10) {
+    if (score < 8) {
       setCurrentQuestion(nextQuestion);
     } else {
 
