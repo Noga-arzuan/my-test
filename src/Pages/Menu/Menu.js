@@ -12,7 +12,7 @@ export default function Menu() {
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) setScore(score + 1);
     const nextQuestion = currentQuestion + 1;
-    if (score < 7) setCurrentQuestion(nextQuestion);
+    if (score < 5) setCurrentQuestion(nextQuestion);
     else {
       setShowScore(true);
     }
