@@ -17,12 +17,13 @@ function NavBar() {
   });
   
   return (
-    <div>
+   
+
+    <nav>
+     <div>
     האתר בפיתוח 
     לפרטים נוספים   nogaarzuan@gmail.com
     </div>
-
-//     <nav>
 //       <div className='nav-wrapper' style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly" }}>
 //         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
@@ -51,7 +52,7 @@ function NavBar() {
 //           </ul>
 //         </div>
 //       </div>
-//     </nav>
+    </nav>
 
   );
 
