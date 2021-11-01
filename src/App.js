@@ -17,12 +17,18 @@ class App extends React.Component {
       <div className='app'>
         <Router>
           <NavBar />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/menu' component={Menu} />
-            <Route path='/about' component={About} />
+      <div>
+      c
+      ברוכות הבאות 
+      האתר סגור לצורכי פיתוח 
+      
+      </div>
+//           <Switch>
+//             <Route exact path='/' component={Home} />
+//             <Route path='/menu' component={Menu} />
+//             <Route path='/about' component={About} />
 
-          </Switch>
+//           </Switch>
         
         </Router>
         
