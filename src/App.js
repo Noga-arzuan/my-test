@@ -16,15 +16,18 @@ class App extends React.Component {
     return (
       <div className='app'>
         <Router>
+      <NavBar />
+     
       
-      <div>
-      c
-      ברוכות הבאות 
-  האתר סגור לצורכי פיתוח 
-      לפרטים נוספים nogaarzuan@gmail.com
-      </div>
+  
+  
+    
+          <Switch>
+           <Route exact path='/' component={Home} />
+            <Route path='/menu' component={Menu} />
+            <Route path='/about' component={About} />
 
-        </Switch>
+          </Switch>
         
         </Router>
         
