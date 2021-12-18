@@ -21,9 +21,8 @@ const FirstStage = () => {
 
 
         <br></br>    
-להעמקת הידע שלך בנושא זוגיות בריאה היכנסי לאתר משרד הרווחה 
-            <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'>
-          https://domestic-violence-program.org.il
+להעמקת הידע שלך בנושא זוגיות בריאה היכנסי 
+            <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'> לאתר משרד הרווחה
         </a>
 
           </p>
