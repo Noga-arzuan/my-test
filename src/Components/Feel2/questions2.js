@@ -1,62 +1,62 @@
 export const questions = [
   {
     questionText:
-      'אני מקבלת מבן הזוג שלי המון הודעות וטלפונים בצורה מוגזמת/אובססיבית',
+      ' בן הזוג שלי מתקשר ושולח המון הודעות במשך היום',
     answerOptions: [
-      { answerText: 'מקבלת', isCorrect: true },
-      { answerText: 'לא מקבלת ', isCorrect: false },
+      { answerText: 'מגזים לגמרי', isCorrect: true },
+      { answerText: 'לא במיוחד ', isCorrect: false },
     ],
   },
 
   {
     questionText:
-      'בן הזוג שלי חושב שאני משקיעה בעצמי יותר מידי (בעבודה, בלבוש, בלימודים, בבילויים)',
+      'לבן זוג שלי מפריע שאני משקיעה בעצמי   ',
 
     answerOptions: [
-      { answerText: 'חושב', isCorrect: true },
-      { answerText: 'לא חושב ', isCorrect: false },
+      { answerText: 'משתגע מזה', isCorrect: true },
+      { answerText: ' הכי מפרגן ', isCorrect: false },
     ],
   },
 
   {
     questionText:
-      'בן הזוג שלי גורם לי להרגיש שאני יכולה לעשות הכל בצורה נכונה',
+      'שום דבר שאני עושה לא מספיק טוב בשבילו',
     answerOptions: [
-      { answerText: 'כן', isCorrect: false },
-      { answerText: 'לא ', isCorrect: true },
+      { answerText: 'דווקא מעריך', isCorrect: false },
+      { answerText: 'מתלונן כל הזמן ', isCorrect: true },
     ],
   },
 
   {
     questionText: 'בן הזוג שלי לא מזלזל במה שאני מרגישה',
     answerOptions: [
-      { answerText: 'לא מזלזל', isCorrect: false },
-      { answerText: 'מזלזל ', isCorrect: true },
+      { answerText: 'אף פעם לא ', isCorrect: false },
+      { answerText: 'כל הזמן ', isCorrect: true },
     ],
   },
 
   {
-    questionText: 'אני מרגישה שאני בן אדם פחות חופשי ממה שהרגשתי לפני היחסים',
+    questionText: 'אני מרגישה פחות חופשייה מאז שאנו יחד',
     answerOptions: [
-      { answerText: 'פחות חופשיה', isCorrect: true },
-      { answerText: 'חופשיה ', isCorrect: false },
+      { answerText: ' מרגישה כמו בכלא', isCorrect: true },
+      { answerText: 'חופשיה כמו ציפור ', isCorrect: false },
     ],
   },
 
   {
     questionText:
-      'אני מרגישה שיש חשיבות לדעה שלי, ולרוב בן זוגי ואני מחליטים החלטות משותפות ',
+      'בכל הנוגע לקשר, בן זוגי מקבל את כל ההחלטות  ',
     answerOptions: [
       { answerText: 'מחליטים ביחד', isCorrect: false },
-      { answerText: 'לא מחליטים ביחד ', isCorrect: true },
+      { answerText: 'לא שואל לדעתי ', isCorrect: true },
     ],
   },
 
   {
     questionText: 'בן הזוג שלי מעליב אותי',
     answerOptions: [
-      { answerText: 'מעליב', isCorrect: true },
-      { answerText: 'לא מעליב', isCorrect: false },
+      { answerText: 'לעיתים קרובות', isCorrect: true },
+      { answerText: 'אף פעם לא', isCorrect: false },
     ],
   },
 
@@ -64,23 +64,23 @@ export const questions = [
     questionText: 'בן הזוג שלי יורד עליי או גורם לי להרגיש קטנה',
     answerOptions: [
       { answerText: 'יורד עלי', isCorrect: true },
-      { answerText: 'לא יורד עליי ', isCorrect: false },
+      { answerText: 'להיפך,מעצים אותי ', isCorrect: false },
     ],
   },
 
   {
     questionText:
-      'בן הזוג שלי גורם לי להרגיש שאני לא יכולה לעשות שום דבר בצורה נכונה',
+      'לעיתים קרובות בן זוגי גורם לי לפקפק בעצמי',
     answerOptions: [
-      { answerText: 'לא יכולה', isCorrect: true },
-      { answerText: 'יכולה ', isCorrect: false },
+      { answerText: 'כל הזמן ', isCorrect: true },
+      { answerText: 'ממש לא ', isCorrect: false },
     ],
   },
   {
-    questionText: 'בן זוגי אף פעם לא מעיר לי על  צורת הלבוש שלי ',
+    questionText: 'בן הזוג שלי מזלזל במה שאני מרגישה ',
     answerOptions: [
-      { answerText: 'לא מעיר', isCorrect: false },
-      { answerText: 'כן מעיר ', isCorrect: true },
+      { answerText: 'ממש לא ', isCorrect: false },
+      { answerText: ' כל הזמן', isCorrect: true },
     ],
   },
   {
@@ -92,19 +92,19 @@ export const questions = [
   },
   {
     questionText:
-      'כשבן זוגי רואה  הודעות או מיילים שלי, הוא  חוקר אותי לגביהם ',
+      ' בן זוגי עוקב אחרי ההודעות והמיילים שלי  ',
     answerOptions: [
-      { answerText: 'לא חוקר', isCorrect: false },
-      { answerText: 'חוקר ', isCorrect: true },
+      { answerText: 'יש לי פרטיות מוחלטת ', isCorrect: false },
+      { answerText: 'אין לי טיפת פרטיות ', isCorrect: true },
     ],
   },
   {
-    questionText: 'בן הזוג מאוכזב ולא מרוצה ממני לעתים קרובות',
-    answerOptions: [
-      {
-        answerText: 'מאוכזב', isCorrect: true
-      },
-      { answerText: 'לא מאוכזב ', isCorrect: false },
-    ],
+  //   questionText: 'בן הזוג מאוכזב ולא מרוצה ממני לעתים קרובות',
+  //   answerOptions: [
+  //     {
+  //       answerText: 'מאוכזב', isCorrect: true
+  //     },
+  //     { answerText: 'לא מאוכזב ', isCorrect: false },
+  //   ],
   },
 ];
