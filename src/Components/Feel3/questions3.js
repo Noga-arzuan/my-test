@@ -1,21 +1,21 @@
 export const questions = [
   {
-    questionText: 'בן זוגי מבקש ממני לא להיפגש עם גברים אחרים חוץ ממנו: גברים בעבודה, ידידים וכו',
+    questionText: ' בן הזוג שלי בודק אם מי אני נפגשת או מדברת',
 
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'עוקב אחרי', isCorrect: true },
+      { answerText: 'שואל בהתענינות ', isCorrect: false },
 
     ],
   },
 
   {
     questionText:
-      ' את מזהה אצל בן זוגך בסיטואציות מסוימות מבט של "רצח" בעיניים',
+      ' בן הזוג שלי חושד  שאני לא מספיק נאמנה',
 
     answerOptions: [
-      { answerText: 'מזהה', isCorrect: true },
-      { answerText: 'לא מזהה', isCorrect: false },
+      { answerText: 'לא מאמין לי', isCorrect: true },
+      { answerText: 'סומך עלי לגמרי', isCorrect: false },
     ],
   },
 
@@ -38,36 +38,36 @@ export const questions = [
   },
 
   {
-    questionText: 'בן הזוג שלי לא אומר לי מה ללבוש או איך להתאפר',
+    questionText: 'בן הזוג מעיר לי על הלבוש שלי ',
     answerOptions: [
-      { answerText: 'אומר', isCorrect: false },
-      { answerText: 'לא אומר', isCorrect: true },
+      { answerText: 'אוהב איך שאני מתלבשת', isCorrect: false },
+      { answerText: 'מעיר נון סטופ ', isCorrect: true },
     ],
   },
 
   {
-    questionText: 'אני מרגישה שבן הזוג שלי קנאי כלפי ',
+    questionText: 'בן הזוג שלי מקנא לי ',
     answerOptions: [
-      { answerText: 'קנאי', isCorrect: true },
-      { answerText: 'לא קנאי', isCorrect: false },
-    ],
-  },
-
-  {
-    questionText:
-      'אני מרגישה שחוץ מבן הזוג שלי אף אחד אחר לא רוצה להיות איתי',
-    answerOptions: [
-      { answerText: 'מרגישה', isCorrect: true },
-      { answerText: 'לא מרגישה', isCorrect: false },
+      { answerText: 'מקנה מאוד', isCorrect: true },
+      { answerText: 'לא מקנא בכלל', isCorrect: false },
     ],
   },
 
   {
     questionText:
-      'בן הזוג שלי אומר שאני ממש לא חייבת לחכות לו בבית כשהוא חוזר מהעבודה',
+      ' בן הזוג שלי טוען שהוא היחיד שיסכים להיות איתי',
     answerOptions: [
-      { answerText: 'אומר', isCorrect: false },
-      { answerText: 'לא אומר', isCorrect: true },
+      { answerText: 'כל הזמן', isCorrect: true },
+      { answerText: 'ממש לא ', isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      'אני אמורה להיות בבית כשבן הזוג שלי חוזר מהעבודה',
+    answerOptions: [
+      { answerText: 'יש לי את הלו"ז שלי', isCorrect: false },
+      { answerText: 'מחכה עם ארוחת ערב ', isCorrect: true },
     ],
   },
 
@@ -81,44 +81,44 @@ export const questions = [
   {
     questionText: 'בן הזוג שלי לא מונע ממני לעבוד',
     answerOptions: [
-      { answerText: 'מונע', isCorrect: false },
-      { answerText: ' לא מונע', isCorrect: true },
+      { answerText: 'לא מסכים שאעבוד', isCorrect: false },
+      { answerText: ' עובדת כרגיל ', isCorrect: true },
     ],
   },
   {
-    questionText: 'בן הזוג שלי מחליט לבד החלטות בנוגע לכסף שלי ',
+    questionText: 'בן הזוג שלי שולט  בכסף שלי ',
     answerOptions: [
-      { answerText: 'מחליט לבד', isCorrect: true },
-      { answerText: 'לא מחליט לבד', isCorrect: false },
+      { answerText: ' לא מוציאה שקל בלי רשות', isCorrect: true },
+      { answerText: 'מה ששלי-שלי', isCorrect: false },
     ],
   },
   {
-    questionText: 'במהלך הקשר התרחקתי ממשפחתי בעקבות לחץ מבן זוגי',
+    questionText: 'התרחקתי מהמשפחה מאז שאנחנו ביחד ',
     answerOptions: [
-      { answerText: 'התרחקתי ממשפחתי', isCorrect: true },
-      { answerText: 'לא התרחקתי ממשפחתי', isCorrect: false },
+      { answerText: 'התרחקתי מאוד', isCorrect: true },
+      { answerText: 'קרובה כמו תמיד', isCorrect: false },
     ],
   },
   {
-    questionText: 'בן הזוג שלי מכריח אותי לעשות יותר סקס ממה שאני רוצה',
+    questionText: 'בן הזוג שלי מכריח אותי לשכב איתו',
     answerOptions: [
-      { answerText: 'מכריח', isCorrect: true },
-      { answerText: 'לא מכריח', isCorrect: false },
+      { answerText: 'לא מרפה ממני', isCorrect: true },
+      { answerText: ' לעולם לא ', isCorrect: false },
     ],
   },
   {
     questionText:
-      'בן זוגי מסתכל על הודעות ומיילים שלי, ולפעמים אפילו חוקר אותי לגביהם',
+      ' בן זוגי עוקב אחרי ההודעות והמיילים שלי     ',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'אין לי טיפת פרטיות', isCorrect: true },
+      { answerText: 'יש לי פרטיות מוחלטת ', isCorrect: false },
     ],
   },
   {
-    questionText: 'חוויתי השפלה וצעקות מבן הזוג שלי ליד אנשים אחרים',
+    questionText: 'בן הזוג שלי השפיל אותי בפומבי',
     answerOptions: [
-      { answerText: 'חוויתי', isCorrect: true },
-      { answerText: 'לא חוויתי', isCorrect: false },
+      { answerText: 'לא קרה ', isCorrect: true },
+      { answerText: ' (: כבר חוויתי', isCorrect: false },
     ],
   },
   {
@@ -137,15 +137,15 @@ export const questions = [
   },
   {
     questionText:
-      'בן הזוג שלי לא מכריח אותי במהלך סקס לעשות דברים שאני לא רוצה',
+      'בן הזוג שלי  מכריח אותי   לעשות דברים שאני לא רוצה בסקס ',
     answerOptions: [
-      { answerText: 'לא מכריח', isCorrect: false },
-      { answerText: 'מכריח ', isCorrect: true },
+      { answerText: 'בחיים לא ', isCorrect: false },
+      { answerText: 'כבר קרה ', isCorrect: true },
     ],
   },
   {
     questionText:
-      'בן זוגי מתעצבן על דברים שאני עושה, לפעמים אפילו אם זה משהו שבעיני ממש קטן ולא משמעותי',
+      ' בן זוגי מתעצבן מכל דבר קטן שאני עושה',
     answerOptions: [
       { answerText: 'מתעצבן', isCorrect: true },
       { answerText: 'לא מתעמבן ', isCorrect: false },
@@ -154,15 +154,15 @@ export const questions = [
   {
     questionText: 'חוויתי אלימות מילולית מבן הזוג שלי',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'קללות הן עיניין שבשגרה', isCorrect: true },
+      { answerText: 'ממש לא הסגנון שלו ', isCorrect: false },
     ],
   },
   {
-    questionText: 'בן הזוג שלי נוטה להכחיש אירועים אובססיביים שקרו',
+    questionText: ' בן זוגי מכחיש את התנהגותו האובססיבית',
     answerOptions: [
-      { answerText: 'מכחיש', isCorrect: true },
-      { answerText: 'לא מכחיש', isCorrect: false },
+      { answerText: 'מכחיש מכל וכל', isCorrect: true },
+      { answerText: 'הוא לא אובססיבי ', isCorrect: false },
     ],
   },
 ];
