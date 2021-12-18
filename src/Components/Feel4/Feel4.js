@@ -23,7 +23,6 @@ export default function Feel4() {
   };
   return (
     <div className='container'>
-      <div className='app'>
         {currentQuestion === 5 ? (
           <RedFlag />
         ) : showScore ? (
@@ -56,7 +55,6 @@ export default function Feel4() {
             </div>
           </>
         )}
-      </div>
     </div>
   );
 }
