@@ -25,7 +25,7 @@ export default function Feel2() {
   };
   return (
     <div className='container'>
-        {currentQuestion === 7 ? (
+        {currentQuestion === 13 ? (
           <SecondStage />
         ) : showScore ? (
           <div className='score-section'>
