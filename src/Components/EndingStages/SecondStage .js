@@ -15,16 +15,13 @@ const SecondStage = () => {
       {
         showSummery ?
           <p className="sumery">           
-    עושה רושם שיש התנהגויות במערכת היחסים הזוגית שפוגעות בך, אך לא בהכרח מדובר בסימני אזהרה
-    חשוב לדבר עם בן הזוג ולהבהיר לו מה מתאים לך ומה צריך להשתנות.
-    תשמעי גם את הצד שלו, כי תקשורת טובה היא אבן היסוד של מערכת יחסים בריאה.
-    כמו כן, מומלץ ללמוד עוד על ניהול זוגיות ומהם הסימנים של זוגיות פוגענית
-להעמקת הידע שלך בנושא זוגיות בריאה היכנסי    
-    <a href="https://www.gov.il/he/departments/topics/molsa-violence-and-delinquency-domestic-violence/govil-landing-page">לאתר משרד הרווחה</a></br>
+ עושה רושם שיש התנהגויות במערכת היחסים הזוגית שפוגעות בך, אך לא בהכרח מדובר בסימני אזהרה. חשוב לדבר עם בן הזוג ולהבהיר לו מה מתאים לך ומה צריך להשתנות. תשמעי גם את הצד שלו, כי תקשורת טובה היא אבן היסוד של מערכת יחסים בריאה. בנוסףכמו כן, מומלץ ללמוד עוד על ניהול זוגיות ומהם הסימנים של זוגיות פוגענית:. 
+להעמקת הידע שלך בנושא זוגיות בריאה היכנסי לאתר משרד הרווחה 
+  <a href="https://www.gov.il/he/departments/topics/molsa-violence-and-delinquency-domestic-violence/govil-landing-page">לחצי כאן</a></br>למוקדי תמיכה בנושא זוגיות   
 בכל זאת  חוששת שאת במערכת יחסים פוגענית?
     כאן מחכה לך  שליחת הודעה לחבר/ה קרוב/ה
 
-            <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>שליחת הודעה לחבר/ה קרוב/ה</button>
+            <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>שליחת הודעה </button>
            
           </p>
           : <SendMsg msg={msg} />
