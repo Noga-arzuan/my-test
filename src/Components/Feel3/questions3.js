@@ -45,13 +45,7 @@ export const questions = [
     ],
   },
 
-  {
-    questionText: 'בן הזוג שלי מקנא לי ',
-    answerOptions: [
-      { answerText: 'מקנה מאוד', isCorrect: true },
-      { answerText: 'לא מקנא בכלל', isCorrect: false },
-    ],
-  },
+  
 
   {
     questionText:
