@@ -17,7 +17,7 @@ export default function Feel2() {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 40) {
+    if (score < 80) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
