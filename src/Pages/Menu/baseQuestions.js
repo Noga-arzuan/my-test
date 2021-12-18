@@ -87,6 +87,20 @@ export const questions = [
       { answerText: 'לא יכולה להצליח', isCorrect: true },
     ],
   },
+  {
+    questionText: 'בן זוגי אינו מודה שהוא טועה',
+    answerOptions: [
+      { answerText: ' מודה ומתנצל', isCorrect: false },
+      { answerText: 'אינו מודה לעולם', isCorrect: true },
+    ],
+  },
+  {
+    questionText: 'בן הזוגי שלי מתרגז אם איני מסכימה איתו',
+    answerOptions: [
+      { answerText: ' פתוח לשמוע את דעתי', isCorrect: false },
+      { answerText: 'אוי ואבוי אם לא נסכים', isCorrect: true },
+    ],
+  },
 
   {
     questionText: 'בן הזוג מפרגן לי על ההצלחות שלי',
