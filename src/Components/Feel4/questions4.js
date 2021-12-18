@@ -9,7 +9,7 @@ export const questions = [
   },
 
   {
-    questionText: ' בן זוגי מהווה לבני משפחתי וחברי',
+    questionText: ' בן זוגי מהווה סכנה לבני משפחתי וחברי',
 
     answerOptions: [
       { answerText: 'בשום אופן לא ', isCorrect: false },
