@@ -25,7 +25,6 @@ export default function Feel3() {
   };
   return (
     <div className='container'>
-      <div className='app'>
         {currentQuestion === 13 ? (
           <ThirdStage />
         ) : showScore ? (
@@ -59,6 +58,5 @@ export default function Feel3() {
           </>
         )}
       </div>
-    </div>
   );
 }
