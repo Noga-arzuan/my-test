@@ -28,11 +28,11 @@ const ThirdStage = () => {
       
           <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>שליחת הודעה לחבר/ה קרוב/ה</button>
           <br/>
-    למוקדי תמיכה בנושא זוגיות לחצי כאן 
+    <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'>למוקדי תמיכה בנושא זוגיות לחצי כאן </a>
           <br/>
     להעמקת הידע שלך בנושא זוגיות בריאה היכנסי   <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'>לאתר משרד הרווחה 
           https://domestic-violence-program.org.il
-        </a>לאתר משרד הרווחה 
+        </a> 
         </p>
         : <SendMsg msg={msg}/>
       }
