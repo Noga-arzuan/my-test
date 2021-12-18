@@ -1,59 +1,59 @@
 export const questions = [
   {
     questionText:
-      'בן הזוג שלי מצלם אותי בסיטואציות פרובקטיביות ללא הסכמתי ומאיים שישלח את זה לאנשים אם אחשוב להיפרד ממנו  ',
+      ' בן זוגי מאיים לפרסם תמונות פרובקטיביות שלי ',
     answerOptions: [
-      { answerText: 'מצלם', isCorrect: true },
-      { answerText: 'לא מצלם', isCorrect: false },
+      { answerText: 'חס וחלילה', isCorrect: true },
+      { answerText: 'אני יכולה לדמיין את זה קורה ', isCorrect: false },
     ],
   },
 
   {
-    questionText: 'אני לא מרגישה שאני או בני משפחתי וחברי נמצאים בסכנה',
+    questionText: ' בן זוגי מהווה לבני משפחתי וחברי',
 
     answerOptions: [
-      { answerText: 'נמצאים בסכנה', isCorrect: false },
-      { answerText: 'לא נמצאים בסכנה', isCorrect: true },
+      { answerText: 'בשום אופן לא ', isCorrect: false },
+      { answerText: 'אני לא רגועה', isCorrect: true },
     ],
   },
 
   {
-    questionText: 'אני חוששת שבן הזוג שלי יפגע בעצמו בגללי',
+    questionText: ' בן הזוג שלי מאיים שיפגע בעצמו בגללי',
     answerOptions: [
-      { answerText: 'יפגע בעצמו', isCorrect: true },
-      { answerText: 'לא יפגע בעצמו', isCorrect: false },
+      { answerText: 'לא מאיים', isCorrect: true },
+      { answerText: 'בגלל זה אני נשארת איתו', isCorrect: false },
     ],
   },
 
   {
-    questionText: 'לא חוויתי אלימות פיזית בשבועות האחרונים',
+    questionText: ' חוויתי אלימות פיזית בשבועות האחרונים',
     answerOptions: [
-      { answerText: 'כן', isCorrect: false },
-      { answerText: 'לא ', isCorrect: true },
+      { answerText: 'לא קרה מעולם', isCorrect: false },
+      { answerText: 'לצערי זה קרה ', isCorrect: true },
     ],
   },
 
   {
-    questionText: 'חוויתי פחד מבן הזוג שלי בשבועות האחרונים',
+    questionText: ' אני מפחדת מבן הזוג שלי ',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'מפחדת מאוד', isCorrect: true },
+      { answerText: 'ממה יש לפחד? ', isCorrect: false },
     ],
   },
 
   {
-    questionText: 'בן הזוג שלי לא מונע ממני להשתמש בכסף שלי',
+    questionText: 'בן הזוג שלי שולט בכסף שלי',
     answerOptions: [
-      { answerText: 'כן', isCorrect: false },
-      { answerText: 'לא ', isCorrect: true },
+      { answerText: 'מה ששלי שלי', isCorrect: false },
+      { answerText: 'לא מוציאה שקל בלי רשות ', isCorrect: true },
     ],
   },
 
   {
-    questionText: 'בן הזוג שלי מאיים עלי שיהרוס לי דברים',
+    questionText: ' בן הזוג  איים  שיהרוס את החפצים שלי',
     answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'הרס כמה דברים', isCorrect: true },
+      { answerText: ' מעולם לא ', isCorrect: false },
     ],
   },
 ];
