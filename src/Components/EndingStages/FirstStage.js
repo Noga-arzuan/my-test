@@ -1,35 +1,38 @@
-import React from 'react';
+import React, { useState } from "react";
+import SendMsg from "../SendMsg";
 
 const FirstStage = () => {
+  const [showSummery, setShowSummery] = useState(true);
+  const msg = 'יקר/ה, שולחת לך את ההודעה הזאת כי אני מתלבטת בנוגע לתחום ממש חשוב בחיים שלי. אני מבולבלת ולא בטוחה מה אני רוצה לעשות עם זה ואשמח להתייעץ איתך בנושא אבל ממש חשוב לי שזה יישאר בנינו. תוכלי שנשב השבוע ונדבר במקום נייטרלי?'
+
+  const sendMsg = () => {
+    setShowSummery(false);
+  }
+
   return (
-    <div className=' col s12 m6'>
-      <h1 className='header'>לפרוש כנפיים ולעוף</h1>
-      <p className='sumery'>
-        <br />
-        <br />
-        נשמע שמערכת היחסים שלכם נמצאת במסלול בריא,
-        <br /> אך ייתכן שיש לך חברה שלא נמצאת במערכת כזו
-        <br />
-        אולי את מכירה מישהי שנמצאת במערכת יחסים פוגענית
-        <br /> בלחיצה על אחד מכפתורי השיתוף תוכלי לשתף גם אותה בשאלון
-        <br />
-        בנוסף קיימים בקהילה מענים לכל שאלה לגבי זוגיות בריאה ומשפחה שתוכלי
-        להיכנס אליהם בכל עת
-        <br />
-        ניתן להיכנס לאתר משרד הרווחה לקבל מידע <br />
-        <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'>
+    <div className="about">
+      {/* <h1 className="header">לפרוש כנפיים ולעוף</h1> */}
+      {
+        showSummery ?
+          <p className="sumery">
+                  <br></br>      הכל בסדר :)  <br></br>  עושה רושם שאת במערכת יחסים בריאה  <br></br>  
+אבל אם יש לך תחושה שחברה או מכרה שלך נמצאת בזוגיות שפוגעת בה - 
+את מוזמנת ללחוץ על כפתור השיתוף  <br></br>  
+
+
+        <br></br>    
+להעמקת הידע שלך בנושא זוגיות בריאה היכנסי לאתר משרד הרווחה 
+            <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'>
           https://domestic-violence-program.org.il
         </a>
-        <br />
 
-        את יכולה להתקשר
-        <b> עכשיו </b>
-        שיחת חינם <b><a href="tel:188">למספר 118</a></b> <br />
-        או לשלוח הודעה  למספר טלפון
-        055-7000128, 24 שעות ביממה
-        במוקד יושבים אנשי מקצוע שיוכלו לייעץ לך
-      </p>
-    </div >
+          </p>
+          : <SendMsg msg={msg} />
+
+
+      }
+    </div>
   );
 };
 export default FirstStage;
+
