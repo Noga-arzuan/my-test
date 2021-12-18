@@ -13,11 +13,11 @@ export default function Feel3() {
 
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
-      setScore(score + 50);
+      setScore(score + 5);
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 400) {
+    if (score < 45) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
