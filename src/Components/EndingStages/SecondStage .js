@@ -25,7 +25,11 @@ const SecondStage = () => {
 להעמקת הידע שלך בנושא זוגיות בריאה היכנסי 
             <a href='https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter'> לאתר משרד הרווחה
         </a>
+בכל זאת  חוששת שאת במערכת יחסים פוגענית?
+    כאן מחכה לך  שליחת הודעה לחבר/ה קרוב/ה
 
+            <button type="button" class="btn btn-link sendBtn wingsBtn" onClick={() => sendMsg()}>שליחת הודעה לחבר/ה קרוב/ה</button>
+           
           </p>
           : <SendMsg msg={msg} />
 
