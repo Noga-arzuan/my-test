@@ -1,7 +1,7 @@
 export const questions = [
   {
     questionText:
-      ' בן הזוג שלי מתקשר ושולח המון הודעות במשך היום',
+      ' בן הזוג שלי מתקשר אלי ושולח לי הודעות רבות במשך היום',
     answerOptions: [
       { answerText: 'מגזים לגמרי', isCorrect: true },
       { answerText: 'לא במיוחד ', isCorrect: false },
