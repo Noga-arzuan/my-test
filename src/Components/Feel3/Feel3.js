@@ -17,7 +17,7 @@ export default function Feel3() {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 200) {
+    if (score < 500) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
@@ -26,7 +26,7 @@ export default function Feel3() {
   return (
     <div className='container'>
       <div className='app'>
-        {currentQuestion === 7 ? (
+        {currentQuestion === 13 ? (
           <ThirdStage />
         ) : showScore ? (
           <div className='score-section'>
