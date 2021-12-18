@@ -1,52 +1,52 @@
 export const questions = [
   {
     questionText:
-      'אני מתביישת לספר לאנשים קרובים אלי מה באמת קורה ביני ובין בן זוגי',
+      'בן הזוג שלי מתרגז אם איני מסכימה איתו     ',
     answerOptions: [
-      { answerText: 'מתביישת', isCorrect: true },
-      { answerText: 'לא מתביישת ', isCorrect: false },
+      { answerText: ' אוי ואבוי לי אם לא נסכים', isCorrect: true },
+      { answerText: ' פתוח לשמוע את דעתי ', isCorrect: false },
     ],
   },
 
   {
-    questionText: 'בן הזוג שלי מקנא לי המון ',
+    questionText: 'בן זוגי גורם לי אשמה ובושה לעיתים קרובות',
     answerOptions: [
-      { answerText: 'מקנא', isCorrect: true },
-      { answerText: 'לא מקנא ', isCorrect: false },
+      { answerText: 'כל הזמן', isCorrect: true },
+      { answerText: 'ממש לא  ', isCorrect: false },
     ],
   },
 
   {
-    questionText: '  בן זוגי משתגע כשמסתכלים עליי ברחוב ',
+    questionText: 'אין לי סיכוי להצליח בלי בן הזוג שלי ',
     answerOptions: [
-      { answerText: 'לא משתגע', isCorrect: false },
-      { answerText: 'משתגע ', isCorrect: true },
+      { answerText: 'מצליחה רק בזכותו' , isCorrect: false },
+      { answerText: 'ההצלחה שלי לא תלויה בו ', isCorrect: true },
     ],
   },
 
   {
-    questionText: 'בן הזוג שלי דורש ממני דיווח על ההוצאות הכספיות שלי',
+    questionText: 'כשאני מצליחה בן הזוג שלי...',
     answerOptions: [
-      { answerText: 'דורש', isCorrect: true },
-      { answerText: 'לא דורש ', isCorrect: false },
-    ],
-  },
-
-  {
-    questionText:
-      'גילית שבן זוגך חיטט לך בטלפון (וואטסאפ/ באינסטגרם/ בפייסבוק/ מייל/ ביקש ממך סיסמאות)?',
-    answerOptions: [
-      { answerText: 'כן', isCorrect: true },
-      { answerText: 'לא ', isCorrect: false },
+      { answerText: 'מזלזל בי ', isCorrect: true },
+      { answerText: '  מפרגן לי ', isCorrect: false },
     ],
   },
 
   {
     questionText:
-      'בן זוגי אף פעם לא  ביקש ממני  למחוק תמונות שהעליתי לרשתות החברתיות',
+      'לבן הזוג שלי חשוב לשמוע את דעתי ',
     answerOptions: [
-      { answerText: ' לא ביקש ממני  ', isCorrect: true },
-      { answerText: 'ביקש ממני', isCorrect: false },
+      { answerText: ' לא חשוב לו בכלל', isCorrect: true },
+      { answerText: 'חשוב לו מאוד ', isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      'בן הזוג שלי מעודד אותי לעשות דברים שלא קשורים לזוגיות שלנו',
+    answerOptions: [
+      { answerText: ' אוהב שאני רק איתו', isCorrect: true },
+      { answerText: 'מעודד לגמרי', isCorrect: false },
     ],
   },
 
@@ -59,39 +59,26 @@ export const questions = [
     ],
   },
 
-  {
-    questionText:
-      'בן הזוג שלי מונע ממני לקיים מנהגים דתיים (לשים כיסוי ראש, להדליק נרות שבת, ללכת למקווה)  ',
-    answerOptions: [
-      { answerText: 'מונע', isCorrect: true },
-      { answerText: 'לא מונע ', isCorrect: false },
-    ],
-  },
+ 
 
   {
     questionText:
-      'כשאת מסתכלת בעיניים של בן זוגך את מזהה מבטים רגועים ונעימים',
+     'בן הזוג שלי מקנא לי',
     answerOptions: [
-      { answerText: 'כן', isCorrect: false },
-      { answerText: 'לא ', isCorrect: true },
+      { answerText: 'סומך עליי בעיניים עצומות', isCorrect: false },
+      { answerText: 'כל הזמן ועל כל דבר ', isCorrect: true },
     ],
   },
   {
-    questionText:
-      'מאז שאני במערכת יחסים הזאת, לעיתים קרובות אני לא בטוחה בעצמי ומרגישה חוסר ביטחון עצמי',
+    questionText:'אני נפגשת עם חברים גם בלי בן הזוג שלי',
 
     answerOptions: [
-      { answerText: ' מרגישה חוסר ביטחון עצמי ', isCorrect: true },
-      { answerText: 'מרגישה בטחון עצמי ', isCorrect: false },
+      { answerText: ' תמיד איתו ', isCorrect: true },
+      { answerText: 'איך שבא לי ', isCorrect: false },
     ],
   },
-  {
-    questionText: 'קשה לא להסכים עם בן הזוג שלי כי הוא מתרגז אם זה קורה',
-    answerOptions: [
-      { answerText: 'חייבת להסכים איתו', isCorrect: true },
-      { answerText: ' לא חייבת להסכים איתו', isCorrect: false },
-    ],
-  },
+  
+   
   {
     questionText:
       'אני מרגישה שאני יכולה להצליח בהרבה  דברים בלי בן הזוג שלי ',
