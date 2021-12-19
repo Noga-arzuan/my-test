@@ -25,7 +25,7 @@ export default function Feel1(props) {
   return (
     <div className='container'>
 
-      {currentQuestion === 10 ? (
+      {currentQuestion === 8 ? (
         <SecondStage />
       ) : showScore ? (
         <div className='score-section'>
