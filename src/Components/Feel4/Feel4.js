@@ -15,7 +15,7 @@ export default function Feel4() {
     }
 
     const nextQuestion = currentQuestion + 1;
-    if (score < 300) {
+    if (score < 200) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
