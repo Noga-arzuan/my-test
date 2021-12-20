@@ -55,7 +55,7 @@ export const questions = [
     questionText: '   אני ובן זוגי רבים הרבה ',
     answerOptions: [
       { answerText: ' רבים מידי פעם', isCorrect: false },
-      { answerText: ' ריבים על כל דבר ', isCorrect: true },
+      { answerText: ' רבים על כל דבר ', isCorrect: true },
     ],
   },
 
