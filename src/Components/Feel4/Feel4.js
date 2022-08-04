@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import RedFlag from '../EndingStages/RedFlag';
-import CustomStepper from '../Stepper';
-import {questions} from './questions4'
+import React, { useState } from "react";
+import RedFlag from "../EndingStages/RedFlag";
+import CustomStepper from "../Stepper";
+import { questions } from "./questions4";
 
 export default function Feel4() {
-  
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -22,28 +21,29 @@ export default function Feel4() {
     }
   };
   return (
-    <div className='container'>
-        {currentQuestion === 5 ? (
+    <div className="container">
+      {currentQuestion === 5 ? (
+        <RedFlag />
+      ) : showScore ? (
+        <div className="score-section">
           <RedFlag />
-        ) : showScore ? (
-          <div className='score-section'>
-            <RedFlag />
-          </div>
-        ) : (
-          <>
-            <div className='question-section'>
-              <CustomStepper stepNum={4} />
-              <div className='question-count'>
-                <span>Question {currentQuestion + 1}</span>/{questions.length}
-              </div>
-              <div className='question-text'>
-                {questions[currentQuestion].questionText}
-              </div>
+        </div>
+      ) : (
+        <>
+          <div className="question-section">
+            <CustomStepper stepNum={4} />
+            <div className="question-count">
+              {/* <span>Question {currentQuestion + 1}</span>/{questions.length} */}
             </div>
-            <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOption, key) => (
-
-                <button className="wingsBtn"
+            <div className="question-text">
+              {questions[currentQuestion].questionText}
+            </div>
+          </div>
+          <div className="answer-section">
+            {questions[currentQuestion].answerOptions.map(
+              (answerOption, key) => (
+                <button
+                  className="wingsBtn"
                   key={key}
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)
@@ -51,10 +51,11 @@ export default function Feel4() {
                 >
                   {answerOption.answerText}
                 </button>
-              ))}
-            </div>
-          </>
-        )}
+              )
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }
