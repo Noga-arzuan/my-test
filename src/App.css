@@ -69,13 +69,24 @@ Link {
   color: #9b6969;
   border-radius: 12px;
 }
+li a {
+  color: #cea5a5;
+  font-weight: bold;
+  background-color: transparent;
+}
+button a {
+  background-color: transparent;
+}
 a {
   font-size: 32px;
-  color: #cea5a5;
+  color: white;
+  background-color: #905c5c;
 }
+
 a:hover {
-  font-weight: bold;
+  color: #fff;
 }
+
 h1 {
   /* margin: 40px; */
   padding: 5px;
@@ -96,7 +107,7 @@ button {
   background-color: #d97373;
 
   border-radius: 15px;
-  padding: 15px;
+  /* padding: 15px; */
   margin: 20px;
   align-items: center;
   cursor: pointer;

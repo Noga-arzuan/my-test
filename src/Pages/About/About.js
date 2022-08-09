@@ -1,9 +1,9 @@
 import React from "react";
 
-const About = () => {
+function About() {
   return (
     <div>
-      <h1 className="sumery">תנאי השימוש באתר</h1>
+      <h6>תנאי השימוש באתר</h6>
       <p className="sumery">
         פרויקט זה הוא תוצר של האקתון מיכל סלה Safe@Home הההאקתון הראשון בישראל
         להצלת חיים ומיגור אלימות לתשומת לבך! השימוש באתר כפוף לאמור בתנאי השימוש
@@ -15,5 +15,5 @@ const About = () => {
       </p>
     </div>
   );
-};
+}
 export default About;
