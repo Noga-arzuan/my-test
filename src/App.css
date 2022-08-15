@@ -3,6 +3,8 @@
   margin: 0;
   /* box-sizing: border-box; */
   font-family: arial;
+  font-style: italic;
+
   direction: rtl;
 
   /* word-spacing: 10px; */
@@ -69,6 +71,16 @@ Link {
   color: #9b6969;
   border-radius: 12px;
 }
+.about {
+  /* margin: 5%; */
+  text-align: center;
+  /* width: 60%; */
+}
+span {
+  font-size: 2.1em;
+  color: #af60bb;
+  font-weight: bold;
+}
 li a {
   color: #cea5a5;
   font-weight: bold;
@@ -94,8 +106,13 @@ h1 {
 }
 .header {
   font-weight: 800;
+  text-align: center;
+  margin: 0 auto;
   font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #af60bb;
+  background-color: #cea5a5;
 }
 
 button {
