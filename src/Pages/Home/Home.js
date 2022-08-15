@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div
-    // style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
+      style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
       <div className="share1">
         <h6> הכנו עבורך שאלון קצר שינסה לענות לך על השאלה </h6>
