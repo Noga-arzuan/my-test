@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div
-      style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
-    >
+    <div className="main">
       <div className="share1">
         <h6> הכנו עבורך שאלון קצר שינסה לענות לך על השאלה </h6>
         <h1 className="menue">האם אני נמצאת במערכת יחסים בריאה?</h1>

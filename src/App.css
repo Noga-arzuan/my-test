@@ -90,9 +90,10 @@ button a {
   background-color: transparent;
 }
 a {
-  font-size: 32px;
+  font-size: 20px;
   color: white;
   background-color: #905c5c;
+  margin: 20px;
 }
 
 a:hover {
@@ -103,6 +104,11 @@ h1 {
   /* margin: 40px; */
   padding: 5px;
   text-align: center;
+}
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .header {
   font-weight: 800;
@@ -301,9 +307,13 @@ h6 {
 }
 @media screen and (max-width: 600px) {
   .emergencyExit {
-    padding: 8px 13px !important;
+    /* padding: 8px 13px !important; */
     font-size: 1.2rem !important;
+    margin-top: 1.2rem;
   }
+}
+.sumery h1 {
+  font-size: medium;
 }
 
 .timerNote {
@@ -349,7 +359,11 @@ h6 {
   /* min-width: 5rem; */
   background-color: #d87878;
   color: white;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   border: #d87878;
   text-decoration-line: none;
+}
+nav {
+  flex-direction: column;
+  display: inline;
 }
