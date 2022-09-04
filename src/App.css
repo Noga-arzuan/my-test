@@ -51,11 +51,20 @@ Link {
   text-align: justify;
   background-color: white;
 }
-
+.navBar {
+  display: "flex";
+  justify-content: center;
+  align-items: "center";
+}
 /* .question-count {
   margin-bottom: 5px;
   text-align: right;
 } */
+.nav-wrapper {
+  display: "flex";
+  flex-direction: column;
+  justify-content: "center";
+}
 
 .question-text {
   margin-left: 10px;
@@ -77,11 +86,12 @@ Link {
   border-radius: 12px;
 }
 .about {
-  /* margin: 5%; */
-  /* text-align: center; */
-  /* width: 60%; */
-  /* border-radius: 12px; */
-  /* justify-content: end; */
+  padding: 20px;
+  margin: 5%;
+  text-align: center;
+  width: 90%;
+  border-radius: 12px;
+  justify-content: center;
 }
 span {
   font-size: 2.1em;
@@ -326,9 +336,9 @@ h6 {
 }
 .timerNote {
   text-align: right;
-  margin-right: 10px;
+  margin: 10px;
   color: #af60bb;
-
+  padding: 10px;
   font-weight: 600;
   cursor: default;
   margin-bottom: 1rem;
@@ -373,4 +383,11 @@ h6 {
 }
 nav li {
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    float: none;
+    width: 100%;
+  }
 }

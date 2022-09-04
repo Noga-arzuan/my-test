@@ -17,27 +17,8 @@ function NavBar() {
 
   return (
     <nav>
-      <div
-        className="nav-wrapper"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <button
-            className="emergencyExit false wingsBtn"
-            onClick={() => emergencyExit()}
-          >
-            לסגירת הטופס
-          </button>
+      <div className="nav-wrapper">
+        <div className="navBar">
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <ul id="nav-mobile" className="menu">
               <li>
@@ -53,12 +34,17 @@ function NavBar() {
               <Link to='/Menu'>Menu</Link>
              </li> */}
             </ul>
+            <img src={aboutImg} className="App-logo" alt="logo" />
           </div>
-          <img src={aboutImg} className="App-logo" alt="logo" />
         </div>
         <div className="timerNote">
-          {/* {" "}
-          לביטחונך השאלון מאובטח ויסגר תוך 10 דקות{" "} */}
+          <button
+            className="emergencyExit false wingsBtn"
+            onClick={() => emergencyExit()}
+          >
+            לסגירת הטופס
+          </button>
+          לביטחונך השאלון מאובטח ויסגר תוך 10 דקות
         </div>
       </div>
     </nav>
