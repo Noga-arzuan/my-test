@@ -21,14 +21,14 @@ function NavBar() {
         <div className="navBar">
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <ul id="nav-mobile" className="menu">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
               {/* <li>
                <Link to='/feel-good'>Feel Good</Link>
              </li> */}
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about">מי אנחנו</Link>
+              </li>
+              <li>
+                <Link to="/">לתחילת השאלון</Link>
               </li>
               {/* <li>
               <Link to='/Menu'>Menu</Link>
@@ -37,7 +37,7 @@ function NavBar() {
             <img src={aboutImg} className="App-logo" alt="logo" />
           </div>
         </div>
-        <div className="timerNote">
+        {/* <div className="timerNote">
           <button
             className="emergencyExit false wingsBtn"
             onClick={() => emergencyExit()}
@@ -45,7 +45,7 @@ function NavBar() {
             לסגירת הטופס
           </button>
           לביטחונך השאלון מאובטח ויסגר תוך 10 דקות
-        </div>
+        </div> */}
       </div>
     </nav>
   );

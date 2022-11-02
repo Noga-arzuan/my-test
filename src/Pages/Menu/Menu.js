@@ -30,24 +30,24 @@ export default function Menu() {
         <>
           <div className="question-section">
             <CustomStepper stepNum={1} />
-            <div className="question-text">
-              {questions[currentQuestion].questionText}
+            {questions[currentQuestion].questionText}
+            <h1 className="safty"> אנא סמני את התשובה הנכונה ביותר עבורך</h1>
+
+            <div className="answer-section">
+              {questions[currentQuestion].answerOptions.map(
+                (answerOption, key) => (
+                  <button
+                    key={key}
+                    className="col s6 m3 wingsBtn"
+                    onClick={() => {
+                      handleAnswerOptionClick(answerOption.isCorrect);
+                    }}
+                  >
+                    {answerOption.answerText}
+                  </button>
+                )
+              )}
             </div>
-          </div>
-          <div className="answer-section">
-            {questions[currentQuestion].answerOptions.map(
-              (answerOption, key) => (
-                <button
-                  key={key}
-                  className="col s6 m3 wingsBtn"
-                  onClick={() => {
-                    handleAnswerOptionClick(answerOption.isCorrect);
-                  }}
-                >
-                  {answerOption.answerText}
-                </button>
-              )
-            )}
           </div>
         </>
       )}
