@@ -13,27 +13,30 @@ function Footer() {
       emergencyExit();
     }, 600000);
   });
+  <span></span>;
 
   return (
-    <div classNme="footer-copyright">
-      <div className="nav-wrapper">
-        <div className="timerNote">
-          <h1>לביטחונך השאלון מאובטח ויסגר תוך 10 דקות*</h1>
-          <button
-            style={{ marginTop: "0" }}
-            className="emergencyExit false wingsBtn"
-            onClick={() => emergencyExit()}
-          >
-            לחצי לסגירת הטופס
-          </button>
-        </div>
-        <div className="contact">
-          <a href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter">
-            ניתן ליצור מיידי קשר גם בקו החם24/7 *1202
-          </a>
-        </div>
+    <div classNme={["footer-copyright"]}>
+      <div className={["nav-wrapper", "timerNote", "middle"]}>
+        <h1> לביטחונך השאלון מאובטח וייסגר תוך 10 דקות*</h1>
+        <button
+          style={{ marginTop: "0" }}
+          className="emergencyExit false wingsBtn"
+          onClick={() => emergencyExit()}
+        >
+          לחצי לסגירת הטופס
+        </button>
       </div>
-      <ShareBar />
+      <a
+        className="contact"
+        href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
+      >
+        ניתן ליצור מיידי קשר גם בקו החם24/7 1202*
+      </a>
+
+      <div className={["center", "middle"]}>
+        <ShareBar />
+      </div>
       <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
     </div>
   );

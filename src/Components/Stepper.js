@@ -27,14 +27,14 @@ export default function CustomStepper(props) {
   let steps = getSteps();
   return (
     <Stepper
-      style={{ height: 0, width: 0 }}
+      style={{ display: "none" }}
       activeStep={props.stepNum}
       alternativeLabel
     >
       {steps.map((label) => (
-        <Step key={label} style={{ height: 0, width: 0 }}>
+        <Step key={label} style={{ height: 100, width: 200 }}>
           <StepLabel
-            style={{ height: 0, width: 0 }}
+            style={{ height: 100, width: 200 }}
             StepIconComponent={customSetIcon}
           >
             {label}
