@@ -19,7 +19,7 @@ export default function Menu() {
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) setScore(score + 1);
     const nextQuestion = currentQuestion + 1;
-    if (score < 7) setCurrentQuestion(nextQuestion);
+    if (score < 8) setCurrentQuestion(nextQuestion);
     else {
       setShowScore(true);
     }
@@ -72,9 +72,6 @@ export default function Menu() {
               alt="women stand"
             />
             {/* <img src={homeImg} className={["change"]} alt="women in a chair" /> */}
-          </div>
-          <div>
-            <img src={homeImg} alt="women in a chair" />
           </div>
         </div>
       )}
