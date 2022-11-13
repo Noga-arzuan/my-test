@@ -1,19 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "materialize-css/dist/css/materialize.min.css";
+import homeImg from "./../../Images/home1.png";
+import standImg from "./../../Images/stand.png";
 
 function Home() {
   return (
     <div className="main">
-      <div className="share1">
-        <h6> הכנו עבורך שאלון קצר שינסה לענות לך על השאלה </h6>
-        <h1 className="menue">האם אני נמצאת במערכת יחסים בריאה?</h1>
-        {/* <h1 className="menu">שמחות שבאת</h1> */}
+      {/* <div className="share1"> */}
+      <h1 lassName="menue"> הכנו עבורך שאלון קצר שינסה לענות לך על השאלה </h1>
+      <h1 className="menue">האם אני נמצאת במערכת יחסים בריאה?</h1>
+      <h1 className="menue">
+        בסיום השאלון יוצג לך דף תוצאה לפי התשובות שבחרת{" "}
+      </h1>
 
-        <button className="wingsBtn">
-          <Link to="Menu">בואי נתחיל!</Link>
-        </button>
-      </div>
+      {/* <h1 className="menu">שמחות שבאת</h1> */}
+
+      <button className="wingsBtn">
+        <Link to="Menu">בואי נתחיל!</Link>
+      </button>
+      {/* </div> */}
+
       <div className="about">
         שאלון הערכה עצמית זה הוא תוצר עבודת התנדבות של למעלה מעשרים עובדות
         סוציאליות ונשות טכנולוגיה, שמטרת מיגור תופעת האלימות במשפחה והצלת חיים
