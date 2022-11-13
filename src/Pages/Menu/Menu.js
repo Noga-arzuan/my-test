@@ -7,6 +7,8 @@ import { questions } from "./baseQuestions";
 import homeImg from "./../../Images/home1.png";
 import standImg from "./../../Images/stand.png";
 import { Checkbox } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { check } from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
   const [checkedState, setCheckedState] = useState();
@@ -47,12 +49,15 @@ export default function Menu() {
               {questions[currentQuestion].answerOptions.map(
                 (answerOption, key) => (
                   <button
+                    icon={"fa-solid fa-check"}
                     key={key}
                     className="col s6 m3 wingsBtn"
                     onClick={() => {
                       handleAnswerOptionClick(answerOption.isCorrect);
                     }}
                   >
+                    <FontAwesomeIcon icon="fa-solid fa-check" />
+
                     {answerOption.answerText}
                   </button>
                 )
@@ -60,13 +65,16 @@ export default function Menu() {
             </div>
           </div>
 
-          <div>
+          <div className="hide">
             <img
               src={standImg}
               className={["homeImg", "column", "left"]}
               alt="women stand"
             />
             {/* <img src={homeImg} className={["change"]} alt="women in a chair" /> */}
+          </div>
+          <div>
+            <img src={homeImg} alt="women in a chair" />
           </div>
         </div>
       )}

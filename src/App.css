@@ -60,13 +60,13 @@ Link {
   text-align: center;
   background-color: #ffe9e9;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 35px;
   color: #500a0a;
   font-weight: bold;
-  margin-top: -52px;
 }
 .answer-section {
   position: relative;
+  font-size: 40px;
 }
 .safe {
   color: #500a0a;
@@ -102,7 +102,7 @@ Link {
 }
 .sumery {
   align-self: center;
-  font-size: large;
+  font-size: 10px;
   text-indent: 50px;
   text-align: center;
   color: #9b6969;
@@ -167,7 +167,10 @@ h1 {
   transform: translateX(10px) rotate(-45deg);
   transform-origin: left bottom;
 }
-
+span {
+  font-style: italic;
+  font-weight: 800;
+}
 .tick-mark::after {
   position: absolute;
   left: 0;
@@ -197,7 +200,7 @@ button {
 
 .safty {
   color: #cea5a5;
-  font-size: 40px;
+  font-size: 16px;
 }
 .iconeStyle {
   color: white;
@@ -354,13 +357,25 @@ h6 {
   font-size: 50px;
   font-weight: bold;
 }
-
+.answer-section button {
+  display: inline;
+  /* width: 300px;
+  height: 100px; */
+  font-size: 20px;
+  color: #a5a58d;
+  background-color: #ffe9e9;
+  font-weight: 600;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  align-items: center;
+  cursor: pointer;
+}
 @media screen and (max-width: 600px) {
   .emergencyExit {
     padding: 8px 13px !important;
     font-size: 12px !important;
     margin-top: 1.2rem;
-    width: 40%;
     height: 2.8rem;
   }
 }
@@ -369,9 +384,8 @@ h6 {
   font-size: 10px;
   font-weight: 400;
 } */
-h1 {
-  font-size: 15px;
-  font-weight: bold;
+.see {
+  display: none;
 }
 
 .answer-section button {
@@ -393,7 +407,7 @@ h1 {
   font-size: 20px;
 }
 .sumery h1 {
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .timerNote {
@@ -440,7 +454,8 @@ h1 {
 
 .wingsBtn {
   border-radius: 24px;
-  /* line-height: 0.1; */
+  line-height: 0.1;
+  width: 80%;
   /* min-width: 5rem; */
   background-color: #d87878;
   color: white;
@@ -487,12 +502,12 @@ nav li {
   h1 nav-wrapper {
   }
   .about {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     width: 90%;
     border-radius: 12px;
     justify-content: right;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     position: static;
   }
@@ -511,6 +526,17 @@ nav li {
   .center {
     width: 100%;
     margin-right: 0;
-    margin-top: 50px;
+  }
+  .hide {
+    display: none;
+  }
+  .see {
+    display: flex;
+  }
+  button {
+    font-size: 10px;
+  }
+  p {
+    margin-bottom: 0.5rem;
   }
 }

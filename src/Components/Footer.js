@@ -20,7 +20,7 @@ function Footer() {
       <div className={["nav-wrapper", "timerNote", "middle"]}>
         <h1 className="close">
           {" "}
-          לביטחונך האישי השאלון מאובטח וייסגר תוך 10 דקות*
+          לביטחונך האישי השאלון מאובטח וייסגר תוך <span>10</span> דקות*
         </h1>
         <button
           style={{ marginTop: "0" }}
