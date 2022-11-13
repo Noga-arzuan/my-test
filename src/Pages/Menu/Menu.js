@@ -41,7 +41,7 @@ export default function Menu() {
             <h1 className="question-section">
               {questions[currentQuestion].questionText}
             </h1>
-            <h1 className="safty"> אנא לחצי על את התשובה הנכונה ביותר עבורך</h1>
+            <h1 className="safty"> אנא לחצי על התשובה הנכונה ביותר עבורך</h1>
 
             <div className="answer-section">
               {questions[currentQuestion].answerOptions.map(
@@ -60,12 +60,13 @@ export default function Menu() {
             </div>
           </div>
 
-          <div className={[]}>
+          <div>
             <img
               src={standImg}
               className={["homeImg", "column", "left"]}
               alt="women stand"
             />
+            {/* <img src={homeImg} className={["change"]} alt="women in a chair" /> */}
           </div>
         </div>
       )}

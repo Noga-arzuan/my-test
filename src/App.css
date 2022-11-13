@@ -6,7 +6,7 @@
   text-align: right;
   direction: rtl;
   letter-spacing: 0.001rem;
-  word-spacing: 5px;
+  /* word-spacing: 2px; */
   /* text-shadow: 2px 2px 5px palevioletred; */
   text-align: center;
 }
@@ -63,7 +63,7 @@ Link {
   font-size: 40px;
   color: #500a0a;
   font-weight: bold;
-  /* margin-top: -52px; */
+  margin-top: -52px;
 }
 .answer-section {
   position: relative;
@@ -194,23 +194,10 @@ button {
   align-items: center;
   cursor: pointer;
 }
-.answer-section button {
-  display: inline;
-  /* width: 300px;
-  height: 100px; */
-  font-size: 26px;
-  color: #a5a58d;
-  background-color: #ffe9e9;
-  font-weight: 400;
-  border-radius: 15px;
-  /* padding: 15px; */
-  margin: 60px;
-  align-items: center;
-  cursor: pointer;
-}
+
 .safty {
   color: #cea5a5;
-  font-size: 20px;
+  font-size: 40px;
 }
 .iconeStyle {
   color: white;
@@ -323,11 +310,7 @@ h6 {
 .span {
   font-weight: bold;
 }
-.App-logo {
-  margin: 0;
-  width: 80px;
-  height: 80px;
-}
+
 .homeImg {
   background-color: transparent;
   position: absolute;
@@ -374,21 +357,33 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .emergencyExit {
-    /* padding: 8px 13px !important; */
-    font-size: 1.2rem !important;
+    padding: 8px 13px !important;
+    font-size: 12px !important;
     margin-top: 1.2rem;
+    width: 40%;
+    height: 2.8rem;
   }
 }
+
+/* .safty {
+  font-size: 10px;
+  font-weight: 400;
+} */
+h1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .answer-section button {
   display: inline;
   /* width: 300px;
   height: 100px; */
-  font-size: 26px;
+  font-size: 10px;
   color: #a5a58d;
   background-color: #ffe9e9;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 15px;
-  /* padding: 15px; */
+  padding: 15px;
   margin: 10px;
   align-items: center;
   cursor: pointer;
@@ -418,6 +413,10 @@ h1 {
   }
   .share {
     padding: 10;
+  }
+  h6 {
+    font-size: 14px;
+    font-weight: bold;
   }
   .timerNote {
     font-size: 0.9rem;
@@ -451,47 +450,42 @@ h1 {
 nav li {
   margin-top: 50px;
 }
-.contact {
-  background-color: #500a0a;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  height: 50px;
-  width: 40%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0%;
-  margin: 5px;
-  padding: 10px;
-}
-.hamburger {
-  border: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: #283b8b;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  position: absolute;
-  top: 50%;
-  right: 25px;
-  transform: translateY(-50%);
-  display: none;
-}
-.hamburger:hover {
-  background-color: #2642af;
-}
 
 @media screen and (max-width: 768px) {
-  /* .navBar {
-    float: none;
-    width: 100%;
-  } */
-  .sumery h1 {
-    font-size: 20px;
+  .close {
+    font-size: 12px;
+  }
+  .safty {
+    font-size: 10px;
+  }
+  .contact {
+    background-color: #500a0a;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+    margin: 5px;
+    padding: 10px;
   }
 
+  .hamburger {
+    display: block;
+  }
+  ul {
+    display: none;
+  }
+  .App-logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  h1 nav-wrapper {
+  }
   .about {
     padding: 20px;
     text-align: center;
@@ -505,12 +499,13 @@ nav li {
 
   .change {
     background-image: url(./Images/home1.png);
+    z-index: 5;
   }
   .homeImg {
     display: none;
   }
   .question-section {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
   }
   .center {

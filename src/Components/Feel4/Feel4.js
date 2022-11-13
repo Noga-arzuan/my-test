@@ -40,7 +40,7 @@ export default function Feel4() {
             <h1 className="question-section">
               {questions[currentQuestion].questionText}
             </h1>
-            <h1 className="safty"> אנא לחצי על את התשובה הנכונה ביותר עבורך</h1>
+            <h1 className="safty"> אנא לחצי על התשובה הנכונה ביותר עבורך</h1>
 
             <div className="answer-section">
               {questions[currentQuestion].answerOptions.map(

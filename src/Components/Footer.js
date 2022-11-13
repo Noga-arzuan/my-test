@@ -18,7 +18,10 @@ function Footer() {
   return (
     <div classNme={["footer-copyright"]}>
       <div className={["nav-wrapper", "timerNote", "middle"]}>
-        <h1> לביטחונך השאלון מאובטח וייסגר תוך 10 דקות*</h1>
+        <h1 className="close">
+          {" "}
+          לביטחונך האישי השאלון מאובטח וייסגר תוך 10 דקות*
+        </h1>
         <button
           style={{ marginTop: "0" }}
           className="emergencyExit false wingsBtn"
@@ -31,7 +34,7 @@ function Footer() {
         className="contact"
         href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
       >
-        ניתן ליצור מיידי קשר גם בקו החם24/7 1202*
+        ניתן ליצור קשר מיידי גם בקו החם24/7 1202*
       </a>
 
       <div className={["center", "middle"]}>

@@ -20,12 +20,23 @@ function NavBar() {
   return (
     <nav>
       {/* <div className="nav-wrapper"> */}
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            flexDirection: "row",
+            display: "flex",
+            alignItems: "baseline",
+          }}
+        >
+          <FontAwesomeIcon icon={faBars} height={50} width={50} />
+
           <ul id="nav-mobile" className="menu">
-            <li>
-              <FontAwesomeIcon icon={faBars} height={50} width={50} />
-            </li>
             <li>
               <Link to="/about">מי אנחנו</Link>
             </li>
@@ -37,7 +48,7 @@ function NavBar() {
              </li> */}
           </ul>
         </div>
-        <div>
+        <div style={{ height: "80px", width: "80px" }}>
           <img src={aboutImg} className="App-logo" alt="logo" />
         </div>
       </div>
