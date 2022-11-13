@@ -41,7 +41,9 @@ function Footer() {
         <ShareBar />
       </div>
       <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
-      <a href="https://www.freepik.com">designed by Freepik - Freepik.com</a>
+      <a style={{ fontSize: 5 }} href="https://www.freepik.com">
+        designed by Freepik - Freepik.com
+      </a>
     </div>
   );
 }

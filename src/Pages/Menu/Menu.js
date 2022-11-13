@@ -65,7 +65,7 @@ export default function Menu() {
             </div>
           </div>
 
-          <div className="hide">
+          <div>
             <img
               src={standImg}
               className={["homeImg", "column", "left"]}
