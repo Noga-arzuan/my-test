@@ -234,14 +234,13 @@ nav {
 }
 
 nav li {
-  margin-top: 20px;
-  display: inline;
+  /* margin-top: 20px; */
   background-color: #ffe9e9;
-  color: white;
+  /* color: white; */
 
   color: #905c5c;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
 }
 .contact {
@@ -378,6 +377,14 @@ h6 {
     margin-top: 1.2rem;
     height: 2.8rem;
   }
+
+  li a {
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 10px;
+    color: white;
+    margin: 0px;
+  }
 }
 
 /* .safty {
@@ -462,9 +469,9 @@ h1 {
   border: #d87878;
   text-decoration-line: none;
 }
-nav li {
+/* nav li {
   margin-top: 50px;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .close {
@@ -489,9 +496,20 @@ nav li {
 
   .hamburger {
     display: block;
+    background-color: #ffe9e9;
+    font-size: 26px;
+    padding: 0px;
+    color: black;
+    display: block;
+    border-color: #ffe9e9;
   }
   ul {
     display: none;
+    list-style: circle inside;
+  }
+  ul a {
+    color: #500a0a;
+    font-size: 20px;
   }
   .App-logo {
     margin-left: 20px;
@@ -512,10 +530,6 @@ nav li {
     position: static;
   }
 
-  .change {
-    background-image: url(./Images/home1.png);
-    z-index: 5;
-  }
   .homeImg {
     display: none;
   }
@@ -538,5 +552,16 @@ nav li {
   }
   p {
     margin-bottom: 0.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    dipslay: inline;
   }
 }

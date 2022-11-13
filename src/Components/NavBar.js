@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import aboutImg from "./../Images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,6 +16,7 @@ function NavBar() {
       emergencyExit();
     }, 600000);
   });
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
     <nav>
@@ -34,19 +35,31 @@ function NavBar() {
             alignItems: "baseline",
           }}
         >
-          <FontAwesomeIcon icon={faBars} height={50} width={50} />
-
-          <ul id="nav-mobile" className="menu">
-            <li>
-              <Link to="/about">מי אנחנו</Link>
-            </li>
-            <li>
-              <Link to="/">לתחילת השאלון</Link>
-            </li>
-            {/* <li>
+          <button
+            className="hamburger"
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
+            <FontAwesomeIcon icon={faBars} height={50} width={50} />
+          </button>
+          <div
+            className={
+              isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+            }
+          >
+            <ul id="nav-mobile" className="navigation-menu">
+              <li>
+                <Link to="/about">מי אנחנו</Link>
+              </li>
+              <li>
+                <Link to="/">לתחילת השאלון</Link>
+              </li>
+              {/* <li>
               <Link to='/Menu'>Menu</Link>
              </li> */}
-          </ul>
+            </ul>
+          </div>
         </div>
         <div style={{ height: "80px", width: "80px" }}>
           <img src={aboutImg} className="App-logo" alt="logo" />
