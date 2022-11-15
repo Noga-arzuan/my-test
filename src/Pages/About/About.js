@@ -17,13 +17,18 @@ function About() {
           תכני אתר זה מנוסחים בלשון נקבה, אך מיועדים לכל המינים. שימוש באתר זה
           מעיד על הסכמתך לתנאים אלו.
         </p>
-        <p>אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"</p>
-        <p>
-          להעמקת הידע שלך בנושא זוגיות בריאה היכנסי <br></br>
-          <a href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter">
-            לאתר משרד הרווחה
-          </a>
+        <p className="sella">
+          אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"
         </p>
+        <p className="about">
+          להעמקת הידע שלך בנושא זוגיות בריאה היכנסי <br></br>
+        </p>
+        <a
+          className="contact"
+          href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
+        >
+          לאתר משרד הרווחה
+        </a>
       </div>
     </div>
   );

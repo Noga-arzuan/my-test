@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 import aboutImg from "./../Images/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { Component } from "react";
-import { render } from "@testing-library/react";
-
 class NavBar extends Component {
   state = { clicked: false };
   handleClick = () => {
@@ -16,30 +12,33 @@ class NavBar extends Component {
     return (
       <>
         <nav>
-          <div id="mobile" onClick={this.handleClick}>
-            <i
-              id="bar"
-              className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-            ></i>
-          </div>
-          <div>
-            <ul
-              id="navbar"
-              className={this.state.clicked ? "#navbar active" : "navbar"}
-            >
-              <li>
-                <Link to="/about">מי אנחנו</Link>
-              </li>
-              <li>
-                <Link to="/">לתחילת השאלון</Link>
-              </li>
-              {/* <li>
+          <div className="bar1">
+            <div id="mobile" onClick={this.handleClick}>
+              <i
+                id="bar"
+                className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+              ></i>
+            </div>
+            <div>
+              <ul
+                id="navbar"
+                className={this.state.clicked ? "#navbar active" : "navbar"}
+              >
+                <li>
+                  <Link to="/about">מי אנחנו</Link>
+                </li>
+                <li>
+                  <Link to="/">לתחילת השאלון</Link>
+                </li>
+                {/* <li>
               <Link to='/Menu'>Menu</Link>
              </li> */}
-            </ul>
+              </ul>
+            </div>
           </div>
-
-          <img src={aboutImg} className="App-logo" alt="logo" />
+          <div style={{ height: "80px", width: "80px" }}>
+            <img src={aboutImg} className="logo" alt="logo" />
+          </div>
         </nav>
       </>
     );
