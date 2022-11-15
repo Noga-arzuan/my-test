@@ -6,13 +6,12 @@
   text-align: right;
   direction: rtl;
   letter-spacing: 0.001rem;
-  /* word-spacing: 2px; */
-  /* text-shadow: 2px 2px 5px palevioletred; */
+  word-spacing: 2px;
   text-align: center;
 }
-/* .right {
+.right {
   margin-right: 150px;
-} */
+}
 .left,
 .right {
   width: 30%;
@@ -22,20 +21,9 @@
   margin-right: 25%;
 }
 
-/* .middle {
-  width: 40%;
-} */
-
-/* #root {
-  width: 80vw;
-  margin: auto;
-} */
-
 body {
-  /*color: #FFE9E9;*/
   background-color: #ffe9e9;
   max-height: fit-content;
-  font-family: "ariel";
 }
 .app {
   width: 100%;
@@ -44,15 +32,47 @@ body {
   text-align: center;
   border-radius: 15px;
   display: inline-block;
-  border: 5px black;
   background-color: #ffe9e9;
-  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #500a0a;
+  transition: 0.3s ease-in-out;
+}
+#navbar li a:hover {
+  color: #70c3c3;
+}
+
+#mobile i {
+  color: #500a0a;
+}
 Link {
   text-decoration: none;
 }
 
+/* Link a {
+  text-decoration: none;
+} */
 .question-section {
   position: relative;
   width: 100%;
@@ -74,17 +94,6 @@ Link {
 
 .middle {
   width: 50%;
-}
-
-.navBar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-wrapper {
-  display: "flex";
-  flex-direction: column;
-  justify-content: "center";
 }
 
 .question-text {
@@ -122,19 +131,13 @@ p a {
   position: relative;
 }
 
-li a {
-  color: #500a0a;
-  font-weight: bold;
-  background-color: transparent;
-}
 button a {
   background-color: transparent;
-}
-a {
-  font-size: 20px;
-  color: white;
-  background-color: #905c5c;
-  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 15px;
 }
 
 h1 {
@@ -149,49 +152,19 @@ h1 {
   margin-bottom: auto;
   padding: 5px;
 }
-.tick-mark {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-}
 
-.tick-mark::before {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 50%;
-  width: 3px;
-  background-color: #336699;
-  content: "";
-  transform: translateX(10px) rotate(-45deg);
-  transform-origin: left bottom;
-}
 span {
   font-style: italic;
   font-weight: 800;
 }
-.tick-mark::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100%;
-  background-color: #336699;
-  content: "";
-  transform: translateX(10px) rotate(-45deg);
-  transform-origin: left bottom;
-}
 
 button {
   display: inline;
-  /* width: 300px;
-  height: 100px; */
   font-size: 26px;
   color: white;
   background-color: #ffe9e9;
   border-radius: 15px;
-  /* padding: 15px; */
+  padding: 15px;
   margin: 20px;
 
   align-items: center;
@@ -227,22 +200,7 @@ button {
 .MuiStep-completed:nth-child(5) .iconeStyle {
   background-color: #905c5c;
 }
-nav {
-  position: flex;
-  display: inline;
-  margin-top: 50px;
-}
 
-nav li {
-  /* margin-top: 20px; */
-  background-color: #ffe9e9;
-  /* color: white; */
-
-  color: #905c5c;
-  text-align: center;
-  /* padding: 14px 16px; */
-  text-decoration: none;
-}
 .contact {
   background-color: #500a0a;
   font-weight: bold;
@@ -254,6 +212,7 @@ nav li {
   border-radius: 0%;
   margin: 5px;
   padding: 10px;
+  text-decoration: none;
 }
 
 .share1 {
@@ -301,18 +260,6 @@ h6 {
   clear: both;
 }
 
-.a {
-  width: 80%;
-  color: #500a0a;
-}
-.flex-container {
-  justify-content: center;
-  text-align: center;
-}
-.span {
-  font-weight: bold;
-}
-
 .homeImg {
   background-color: transparent;
   position: absolute;
@@ -320,34 +267,13 @@ h6 {
   margin-right: -220px;
   margin-top: -70px;
 }
-.active {
-  opacity: 0;
-}
 
-.footer-copyright {
-  background-color: #d97373;
-  color: #af60bb;
-  height: 100px;
-  margin-top: auto;
-}
-/*keyframes*/
-
-/*End keyframes*/
-.container {
-  background-color: #fff;
-  max-width: 1280px;
-  width: 100%;
-}
 .main-container {
-  /* display: flex; */
   justify-content: center;
-  /* margin-right: 30%; */
   border-radius: 50px;
   background-color: #ffe9e9;
 }
 .emergencyExit false {
-  /* background: #ea3535 0 0 no-repeat padding-box; */
-  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); */
   border-radius: 8px;
   opacity: 1;
   color: #fff;
@@ -377,16 +303,7 @@ h6 {
     margin-top: 1.2rem;
     height: 2.8rem;
   }
-
-  li a {
-    font-weight: bold;
-    background-color: transparent;
-    font-size: 12px;
-    color: white;
-    margin: 0px;
-  }
 }
-
 /* .safty {
   font-size: 10px;
   font-weight: 400;
@@ -469,11 +386,34 @@ h1 {
   border: #d87878;
   text-decoration-line: none;
 }
-/* nav li {
-  margin-top: 50px;
-} */
-
 @media screen and (max-width: 768px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #9b6969;
+    box-shadow: 0 40px 60px rgb(255, 205, 234);
+    padding: 40px 0 0 10px;
+  }
+  #mobile {
+    display: block;
+  }
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #navbar.active {
+    right: 0px;
+  }
   .close {
     font-size: 14px;
   }
@@ -494,31 +434,13 @@ h1 {
     padding: 10px;
   }
 
-  .hamburger {
-    display: block;
-    background-color: #ffe9e9;
-    font-size: 30px;
-    padding: 0px;
-    color: black;
-    display: block;
-    border-color: #ffe9e9;
-  }
-  ul {
-    display: none;
-    list-style: circle inside;
-  }
-  ul a {
-    color: #500a0a;
-    font-size: 22px;
-  }
   .App-logo {
     margin-left: 20px;
     margin-top: 20px;
     width: 40px;
     height: 40px;
   }
-  h1 nav-wrapper {
-  }
+
   .about {
     /* padding: 20px; */
     text-align: center;
@@ -552,16 +474,5 @@ h1 {
   }
   p {
     margin-bottom: 0.5rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    .navigation-menu.expanded ul {
-      display: block;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .navigation-menu ul {
-    dipslay: inline;
   }
 }

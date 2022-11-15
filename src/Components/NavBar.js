@@ -1,54 +1,32 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import aboutImg from "./../Images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Component } from "react";
+import { render } from "@testing-library/react";
 
-function NavBar() {
-  const emergencyExit = () => {
-    window.location.replace("https://www.google.com");
-
-    return false;
+class NavBar extends Component {
+  state = { clicked: false };
+  handleClick = () => {
+    this.setState({
+      clicked: !this.state.clicked,
+    });
   };
-
-  useEffect(() => {
-    setTimeout(() => {
-      emergencyExit();
-    }, 600000);
-  });
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
-
-  return (
-    <nav>
-      {/* <div className="nav-wrapper"> */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            flexDirection: "row",
-            display: "flex",
-            alignItems: "baseline",
-          }}
-        >
-          <button
-            className="hamburger"
-            onClick={() => {
-              setIsNavExpanded(!isNavExpanded);
-            }}
-          >
-            <FontAwesomeIcon icon={faBars} height={50} width={50} />
-          </button>
-          <div
-            className={
-              isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-            }
-          >
-            <ul id="nav-mobile" className="navigation-menu">
+  render() {
+    return (
+      <>
+        <nav>
+          <div id="mobile" onClick={this.handleClick}>
+            <i
+              id="bar"
+              className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+            ></i>
+          </div>
+          <div>
+            <ul
+              id="navbar"
+              className={this.state.clicked ? "#navbar active" : "navbar"}
+            >
               <li>
                 <Link to="/about">מי אנחנו</Link>
               </li>
@@ -60,13 +38,11 @@ function NavBar() {
              </li> */}
             </ul>
           </div>
-        </div>
-        <div style={{ height: "80px", width: "80px" }}>
-          <img src={aboutImg} className="App-logo" alt="logo" />
-        </div>
-      </div>
-    </nav>
-  );
-}
 
+          <img src={aboutImg} className="App-logo" alt="logo" />
+        </nav>
+      </>
+    );
+  }
+}
 export default NavBar;

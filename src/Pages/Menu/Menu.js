@@ -6,13 +6,8 @@ import CustomStepper from "../../Components/Stepper";
 import { questions } from "./baseQuestions";
 import homeImg from "./../../Images/home1.png";
 import standImg from "./../../Images/stand.png";
-import { Checkbox } from "@material-ui/core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { check } from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
-  const [checkedState, setCheckedState] = useState();
-
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -56,8 +51,6 @@ export default function Menu() {
                       handleAnswerOptionClick(answerOption.isCorrect);
                     }}
                   >
-                    <FontAwesomeIcon icon="fa-solid fa-check" />
-
                     {answerOption.answerText}
                   </button>
                 )
