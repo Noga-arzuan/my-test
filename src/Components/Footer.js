@@ -19,16 +19,16 @@ function Footer() {
     <div classNme={["footer-copyright"]}>
       <div className={["nav-wrapper", "timerNote", "middle"]}>
         <h1 className="close">
-          {" "}
           לביטחונך האישי השאלון מאובטח וייסגר תוך <span>10</span> דקות*
         </h1>
-        <button
-          style={{ marginTop: "0" }}
-          className="emergencyExit false wingsBtn"
-          onClick={() => emergencyExit()}
-        >
-          לחצי לסגירת הטופס
-        </button>
+        <div className="emergency">
+          <button
+            className="emergencyExit false wingsBtn"
+            onClick={() => emergencyExit()}
+          >
+            לחצי לסגירת הטופס
+          </button>
+        </div>
       </div>
       <a
         className="contact"
@@ -40,10 +40,10 @@ function Footer() {
       <div className={["center", "middle"]}>
         <ShareBar />
       </div>
-      <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
+      {/* <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
       <a style={{ fontSize: 5 }} href="https://www.freepik.com">
         designed by Freepik - Freepik.com
-      </a>
+      </a> */}
     </div>
   );
 }

@@ -6,6 +6,7 @@ import CustomStepper from "../../Components/Stepper";
 import { questions } from "./baseQuestions";
 import homeImg from "./../../Images/home1.png";
 import standImg from "./../../Images/stand.png";
+import { check } from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -38,7 +39,6 @@ export default function Menu() {
             <h1 className="question-section">
               {questions[currentQuestion].questionText}
             </h1>
-            <h1 className="safty"> אנא לחצי על התשובה הנכונה ביותר עבורך</h1>
 
             <div className="answer-section">
               {questions[currentQuestion].answerOptions.map(
@@ -55,15 +55,12 @@ export default function Menu() {
                   </button>
                 )
               )}
+              <h1 className="safty"> אנא לחצי על התשובה הנכונה ביותר עבורך</h1>
             </div>
           </div>
 
           <div>
-            <img
-              src={standImg}
-              className={["homeImg", "column", "left"]}
-              alt="women stand"
-            />
+            <img src={standImg} className={["left"]} alt="women stand" />
             {/* <img src={homeImg} className={["change"]} alt="women in a chair" /> */}
           </div>
         </div>

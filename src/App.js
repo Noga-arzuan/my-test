@@ -13,6 +13,7 @@ class App extends React.Component {
       <div className="app">
         <Router>
           <NavBar />
+          <Footer />
 
           <Switch>
             <Route exact path="/" component={Home} />
@@ -20,8 +21,6 @@ class App extends React.Component {
             <Route path="/about" component={About} />
           </Switch>
         </Router>
-
-        <Footer />
       </div>
     );
   }

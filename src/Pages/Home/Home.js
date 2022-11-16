@@ -6,7 +6,6 @@ import standImg from "./../../Images/stand.png";
 function Home() {
   return (
     <div className="main-text">
-      {/* <div className="share1"> */}
       <h1> הכנו בשבילך שאלון קצר שינסה לענות לך בזמן אמת </h1>
       <h1>האם מערכת היחסים שאת נמצאת בה בריאה?</h1>
       <h1>בסיום השאלון יוצג לך דף תוצאה לפי התשובות שבחרת </h1>

@@ -25,6 +25,12 @@ class NavBar extends Component {
                 className={this.state.clicked ? "#navbar active" : "navbar"}
               >
                 <li>
+                  <h1>
+                    לביטחונך האישי השאלון מאובטח וייסגר תוך <span>10</span>{" "}
+                    דקות*
+                  </h1>
+                </li>
+                <li>
                   <Link to="/about">מי אנחנו</Link>
                 </li>
                 <li>
