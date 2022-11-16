@@ -12,7 +12,7 @@ const SecondStage = () => {
 
   return (
     <div className="about">
-      <h1 className="header">לפרוש כנפיים ולעוף</h1>
+      <h1>לפרוש כנפיים ולעוף</h1>
       {showSummery ? (
         <p className="sumery">
           עושה רושם שיש התנהגויות במערכת היחסים הזוגית שפוגעות בך, אך לא בהכרח
