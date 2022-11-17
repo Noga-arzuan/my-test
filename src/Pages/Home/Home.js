@@ -27,6 +27,10 @@ function Home() {
         מיועדים לכל המינים. שימוש באתר זה מעיד על הסכמתך לתנאים אלו.
         <h6> אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"</h6>
       </div>
+      <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
+      <a style={{ fontSize: 5 }} href="https://www.freepik.com">
+        designed by Freepik - Freepik.com
+      </a>
     </div>
   );
 }
