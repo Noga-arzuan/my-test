@@ -61,11 +61,7 @@ export default function Feel1(props) {
           </div>
 
           <div className={[]}>
-            <img
-              src={standImg}
-              className={["homeImg", "column", "left"]}
-              alt="women stand"
-            />
+            <img src={standImg} className={["left"]} alt="women stand" />
           </div>
         </div>
       )}
