@@ -1,4 +1,5 @@
 import React from "react";
+import homeImg from "./../../Images/home1.png";
 
 function About() {
   return (
@@ -18,14 +19,17 @@ function About() {
           מעיד על הסכמתך לתנאים אלו.
         </p>
         <h6>אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"</h6>
-        <div className="abouta">
+        <div className="about">
           <h6>להעמקת הידע שלך בנושא זוגיות בריאה היכנסי</h6>
-          <a
-            className="contact"
-            href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
-          >
-            לאתר משרד הרווחה
-          </a>
+        </div>
+        <a
+          className="contact"
+          href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
+        >
+          לאתר משרד הרווחה
+        </a>
+        <div>
+          <img src={homeImg} className="homeImg" alt="super women" />
         </div>
       </div>
     </div>

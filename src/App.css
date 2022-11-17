@@ -14,11 +14,11 @@
 }
 .left,
 .right {
-  width: 30%;
+  width: 10%;
 }
 .center {
   width: 40%;
-  margin-right: 25%;
+  margin-right: 30%;
 }
 
 body {
@@ -84,7 +84,6 @@ Link {
 } */
 .question-section {
   position: relative;
-  width: 100%;
   border-radius: 50px;
   text-align: center;
   background-color: #ffe9e9;
@@ -141,6 +140,7 @@ Link {
   font-weight: bold;
   width: 95%;
   color: #de8585;
+  margin: 35px;
 }
 .about h1 {
   font-size: 30px;
@@ -214,7 +214,6 @@ button {
   background-color: #500a0a;
   font-weight: bold;
   color: white;
-  /* height: 50px; */
   width: 40%;
   justify-content: center;
   align-items: center;
@@ -222,6 +221,10 @@ button {
   margin: 40px;
   padding: 5px;
   text-decoration: none;
+}
+.credit {
+  margin: 20px;
+  padding: 20px;
 }
 
 .share1 {
@@ -272,6 +275,12 @@ h6 {
   right: 0;
   margin-right: -220px;
   margin-top: -200px;
+}
+.standImg {
+  background-color: transparent;
+  position: relative;
+  float: left;
+  margin-top: -220px;
 }
 
 .main-container {
@@ -419,6 +428,9 @@ h6 {
     padding: 40px 0 0 10px;
     z-index: 5;
   }
+  .standImg {
+    margin-top: 0%;
+  }
   nav {
     display: flex;
     align-items: center;
@@ -527,5 +539,9 @@ h6 {
   }
   .share1 {
     visibility: hidden;
+  }
+  .credit {
+    margin: 0;
+    padding: 0;
   }
 }

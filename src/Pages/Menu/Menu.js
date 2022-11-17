@@ -6,7 +6,6 @@ import CustomStepper from "../../Components/Stepper";
 import { questions } from "./baseQuestions";
 import homeImg from "./../../Images/home1.png";
 import standImg from "./../../Images/stand.png";
-import { check } from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -59,9 +58,8 @@ export default function Menu() {
             </div>
           </div>
 
-          <div>
-            <img src={standImg} className={["left"]} alt="women stand" />
-            {/* <img src={homeImg} className={["change"]} alt="women in a chair" /> */}
+          <div className={["column", "left"]}>
+            <img src={standImg} className="standImg" alt="women stand" />
           </div>
         </div>
       )}
