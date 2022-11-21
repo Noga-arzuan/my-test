@@ -493,6 +493,16 @@ h6 {
     position: static;
     margin: 5px;
   }
+  .aboutus {
+    /* padding: 20px; */
+    text-align: right;
+    border-radius: 12px;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: bold;
+    position: static;
+    margin: 5px;
+  }
   button a {
     background-color: transparent;
     text-decoration: none;

@@ -59,8 +59,8 @@ export default function Feel4() {
             </div>
           </div>
 
-          <div className={[]}>
-            <img src={standImg} className={["left"]} alt="women stand" />
+          <div className={["column", "left"]}>
+            <img src={standImg} className="standImg" alt="women stand" />
           </div>
         </div>
       )}
