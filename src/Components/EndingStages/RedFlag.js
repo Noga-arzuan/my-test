@@ -17,7 +17,7 @@ const RedFlag = () => {
     <div className=" flex-container">
       {showSummery ? (
         <div className="aboutus">
-          <h1> את רואה ומרגישה נכון, נראה שאת בזוגיות פוגענית</h1>
+          <h2> את רואה ומרגישה נכון, נראה שאת בזוגיות פוגענית</h2>
 
           <p className="aboutus">
             חשוב מאוד שתתייחסי לנורות האדומות בקשר שלך. הצעד הראשון הוא לפנות
