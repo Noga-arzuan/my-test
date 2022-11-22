@@ -280,10 +280,9 @@ h6 {
 }
 .standImg {
   background-color: transparent;
-  /* position: relative; */
-  /* float: right; */
-  /* margin-top: -100px; */
-  /* margin-left: 100px; */
+  position: relative;
+  float: left;
+  margin-top: -220px;
 }
 
 .main-container {
@@ -484,7 +483,7 @@ h6 {
   .logo {
     height: 60px;
     width: 60px;
-    margin: 20px;
+    margin: 10px;
   }
   .about {
     padding: 20px;
