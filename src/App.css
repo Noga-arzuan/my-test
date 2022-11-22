@@ -123,7 +123,7 @@ Link {
 .sumery {
   font-size: 25px;
   text-indent: 50px;
-  text-align: center;
+  text-align: right;
   color: #9b6969;
   border-radius: 12px;
 }
@@ -343,6 +343,9 @@ h6 {
     color: #9b6969;
     border-radius: 12px;
     margin: 5px;
+    border-color: #500a0a;
+    border-width: 2px;
+    padding: 20px;
   }
 }
 /* .safty {
