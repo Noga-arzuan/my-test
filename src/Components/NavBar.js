@@ -42,6 +42,10 @@ class NavBar extends Component {
               </ul>
             </div>
           </div>
+          <div className="lis">
+            <Link to="/">לתחילת השאלון</Link>
+          </div>
+
           <div style={{ height: "80px", width: "80px" }}>
             <img src={aboutImg} className="logo" alt="logo" />
           </div>
