@@ -10617,6 +10617,11 @@
     "ajv" "^6.12.5"
     "ajv-keywords" "^3.5.2"
 
+"segoe-fonts@^1.0.1":
+  "integrity" "sha512-8KOnTvPlIkUUqxDLzk40Ntta7eP62LtjSTdfaCZW3tcBO0K/WUXz9wRUdMARpjA5EwKerHSVw502CyBup8ClMg=="
+  "resolved" "https://registry.npmjs.org/segoe-fonts/-/segoe-fonts-1.0.1.tgz"
+  "version" "1.0.1"
+
 "select-hose@^2.0.0":
   "integrity" "sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo="
   "resolved" "https://registry.npmjs.org/select-hose/-/select-hose-2.0.0.tgz"

@@ -29,7 +29,7 @@ function Footer() {
             לחצי לסגירת הטופס
           </button>
         </div>
-      </div>
+        {/* </div>
       <a
         className="contact"
         href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
@@ -37,7 +37,7 @@ function Footer() {
         ניתן ליצור קשר מיידי גם בקו החם24/7 1202*
       </a>
 
-      <div className={["center", "middle"]}>
+      <div className={["center", "middle"]}> */}
         <ShareBar />
       </div>
       {/* <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
