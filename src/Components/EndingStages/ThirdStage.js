@@ -33,7 +33,7 @@ const ThirdStage = () => {
           <br />
           <br />
           להעמקת הידע שלך בנושא זוגיות בריאה היכנסי{" "}
-          <a href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter">
+          <a href="https://www.gov.il/he/Departments/General/molsa-118">
             לאתר משרד הרווחה
           </a>
         </p>

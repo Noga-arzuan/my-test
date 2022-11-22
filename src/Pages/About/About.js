@@ -26,7 +26,7 @@ function About() {
         </div>
         <a
           className="contact"
-          href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
+          href="https://www.gov.il/he/Departments/General/molsa-118"
         >
           לאתר משרד הרווחה
         </a>
