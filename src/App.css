@@ -282,7 +282,7 @@ h6 {
   background-color: transparent;
   position: relative;
   float: left;
-  margin-top: -220px;
+  margin-top: -320px;
 }
 
 .main-container {
@@ -303,7 +303,6 @@ h6 {
   font-size: 14px;
   padding: 10px;
   font-weight: bold;
-  color: #ffe9e9;
   margin: 5px;
   height: 0px;
 }
@@ -340,9 +339,10 @@ h6 {
     align-self: center;
     font-size: 20px;
     text-indent: 50px;
-    text-align: center;
+    text-align: right;
     color: #9b6969;
     border-radius: 12px;
+    margin: 5px;
   }
 }
 /* .safty {
@@ -431,7 +431,7 @@ h6 {
     z-index: 5;
   }
   .standImg {
-    margin-top: 0%;
+    margin-top: -50px;
   }
   nav {
     display: flex;
@@ -486,11 +486,12 @@ h6 {
     margin: 10px;
   }
   .about {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: right;
     border-radius: 12px;
-    justify-content: center;
+    justify-content: right;
     font-size: 10px;
+    text-align: right;
     /* font-weight: bold; */
     position: static;
     margin: 5px;
