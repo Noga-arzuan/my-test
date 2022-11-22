@@ -61,7 +61,7 @@ export const questions = [
     questionText: "בן הזוג שלי יורד עליי או גורם לי להרגיש קטנה",
     answerOptions: [
       { answerText: "יורד עלי", isCorrect: true },
-      { answerText: "להיפך,מעצים אותי ", isCorrect: false },
+      { answerText: "להיפך, מעצים אותי ", isCorrect: false },
     ],
   },
 
