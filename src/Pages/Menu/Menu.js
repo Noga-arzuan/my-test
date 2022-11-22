@@ -58,8 +58,8 @@ export default function Menu() {
             </div>
           </div>
 
-          <div className={["column", "left"]}>
-            <img src={standImg} className="standImg" alt="women stand" />
+          <div className={["column"]}>
+            {/* <img src={standImg} className="standImg" alt="women stand" /> */}
           </div>
         </div>
       )}
