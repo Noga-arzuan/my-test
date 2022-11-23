@@ -68,6 +68,7 @@ nav {
   list-style: none;
   padding: 0 20px;
   position: relative;
+  justify-content: center;
 }
 #navbar li a {
   text-decoration: none;
@@ -75,6 +76,7 @@ nav {
   font-weight: 600;
   color: #500a0a;
   transition: 0.3s ease-in-out;
+  justify-content: center;
 }
 #navbar li a:hover {
   color: #70c3c3;
@@ -271,8 +273,8 @@ h6 {
   margin-bottom: 0px;
 }
 .footer {
-  margin: -10px;
-  font-size: 0.75em;
+  margin: 10px;
+  font-size: 1em;
 }
 #navbar h1 {
   font-size: 12px;
@@ -366,10 +368,10 @@ h6 {
     text-align: right;
     color: #9b6969;
     border-radius: 12px;
-    margin: 5px;
+    /* margin: 5px; */
     border-color: #500a0a;
     border-width: 2px;
-    padding: 20px;
+    /* padding: 20px; */
   }
 }
 /* .safty {
@@ -397,6 +399,9 @@ h6 {
   line-height: 50px;
   justify-content: center;
 }
+.footer a {
+  color: #de8585;
+}
 
 .timerNote {
   /* text-align: right; */
@@ -420,6 +425,7 @@ h6 {
     font-size: 12px;
     font-weight: bold;
     margin: 10px;
+    line-height: 22px;
   }
   .timerNote {
     font-size: 0.9rem;
@@ -625,7 +631,6 @@ h6 {
     visibility: hidden;
   }
   .credit {
-    margin: 0;
-    padding: 0;
+    line-height: 22px;
   }
 }

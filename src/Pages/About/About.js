@@ -30,6 +30,12 @@ function About() {
         >
           לאתר משרד הרווחה
         </a>
+        <h6 className="footer">
+          ליצירת קשר:
+          <a className="footer" href="mailto:wingsforyou2022@gmail.com">
+            wingsforyou2022@gmail
+          </a>
+        </h6>
         <div>
           <img src={homeImg} className="homeImg" alt="super women" />
         </div>
