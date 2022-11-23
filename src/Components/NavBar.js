@@ -13,31 +13,31 @@ class NavBar extends Component {
       <>
         <nav>
           <div className="bar1">
-            <div>
-              <i id="bar" className={"fas fa-bars"}></i>
-            </div>
-            <div>
-              <ul id="navbar">
-                <li></li>
-                <li>
-                  <Link to="/about">מי אנחנו</Link>
-                </li>
-                <li>
-                  <Link to="/">לתחילת השאלון</Link>
-                </li>
-                {/* <li>
+            <i id="bar" className={"fas fa-bars"}></i>
+          </div>
+          <div>
+            <ul id="navbar">
+              <li></li>
+              <li>
+                <Link to="/about">מי אנחנו</Link>
+              </li>
+              <li>
+                <Link to="/">לתחילת השאלון</Link>
+              </li>
+
+              {/* <li>
               <Link to='/Menu'>Menu</Link>
              </li> */}
-              </ul>
-            </div>
+            </ul>
           </div>
           {/* <div className="lis">
             <Link to="/">לתחילת השאלון</Link>
           </div> */}
+          <img src={aboutImg} className="logo" alt="logo" />
 
-          <div style={{ height: "80px", width: "80px" }}>
-            <img src={aboutImg} className="logo" alt="logo" />
-          </div>
+          {/* <div style={{ height: "30px", width: "30px" }}>
+            // <img src={aboutImg} className="logo" alt="logo" />
+          </div> */}
         </nav>
       </>
     );

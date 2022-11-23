@@ -15,7 +15,7 @@
 .main-text h2 {
   font-size: 40px;
   color: #500a0a;
-  margin: 10px;
+  margin: 0px;
 }
 .left,
 .right {
@@ -54,8 +54,8 @@ nav {
   justify-content: space-between;
   padding: 0px 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-  width: 95%;
-  height: 95px;
+  /* width: 95%;
+  height: 95px; */
   margin: 10px;
   border-radius: 13px;
 }
@@ -178,6 +178,7 @@ button a {
   font-size: 30px;
   font-weight: bold;
   padding: 15px;
+  margin: 0px;
 }
 
 span {
@@ -243,10 +244,6 @@ button {
   padding: 5px;
   text-decoration: none;
 }
-.credit {
-  margin: 20px;
-  padding: 20px;
-}
 
 .share1 {
   text-align: center;
@@ -273,7 +270,7 @@ h6 {
   margin-bottom: 0px;
 }
 .footer {
-  margin: 10px;
+  margin: 0px;
   font-size: 1em;
 }
 #navbar h1 {
@@ -303,8 +300,8 @@ h6 {
   background-color: transparent;
   position: absolute;
   right: 0;
-  margin-right: -220px;
-  margin-top: -200px;
+  margin-right: -270px;
+  margin-top: -170px;
 }
 .standImg {
   background-color: transparent;
@@ -324,7 +321,7 @@ h6 {
 .main-text h1 {
   font-size: 2rem;
   padding: 0px 10px;
-  margin: 0px 10px;
+  margin: 0px 1px;
   color: #500a0a;
 }
 .close {
@@ -445,6 +442,7 @@ h6 {
   background-color: rgb(255, 205, 234);
   padding: 0.3rem;
   text-align: initial;
+  margin: 0px;
 }
 
 .wingsBtn {
@@ -452,10 +450,10 @@ h6 {
   background-color: #d87878;
   color: white;
   border: #d87878;
-  font-size: 40px;
+  /* font-size: 40px; */
   font-weight: bold;
   text-decoration-line: none;
-  line-height: 43px !important;
+  /* line-height: 43px !important; */
 }
 @media screen and (max-width: 600px) {
   /* #navbar {
@@ -532,7 +530,7 @@ h6 {
   .logo {
     height: 60px;
     width: 60px;
-    margin: 10px;
+    /* margin: 10px; */
   }
   .aboutit {
     padding: 20px;
@@ -571,6 +569,7 @@ h6 {
     /* font-weight: bold; */
     position: static;
     margin-right: 30px;
+    margin-left: 30px;
     line-height: 22px;
   }
   .aboutus {
