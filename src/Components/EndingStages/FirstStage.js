@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SendMsg from "../SendMsg";
+import homeImg from "./../../Images/home1.png";
 
 const FirstStage = () => {
   const [showSummery, setShowSummery] = useState(true);
@@ -30,6 +31,9 @@ const FirstStage = () => {
         ) : (
           <SendMsg msg={msg} />
         )}
+        <div className={["column", "right", "change"]}>
+          <img src={homeImg} className="homeImg" alt="women in a chair" />
+        </div>
       </div>
     </div>
   );
