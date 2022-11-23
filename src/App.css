@@ -195,7 +195,7 @@ button {
   background-color: #ffe9e9;
   border-radius: 15px;
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
 
   align-items: center;
   cursor: pointer;
@@ -337,7 +337,7 @@ h6 {
   color: #fff;
   border: hidden;
   padding: 14px 40px;
-  font-size: 50px;
+  font-size: 15px;
   font-weight: bold;
   flex-direction: row;
   align-items: flex-start;
@@ -358,7 +358,7 @@ h6 {
   only screen and (max-width: 1160px) and (min-width: 132px) and (orientation: landscape) {
   .emergencyExit {
     padding: 8px 13px !important;
-    font-size: 14px !important;
+    font-size: 10px !important;
   }
 
   .sumery {
