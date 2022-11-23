@@ -13,23 +13,12 @@ class NavBar extends Component {
       <>
         <nav>
           <div className="bar1">
-            <div id="mobile" onClick={this.handleClick}>
-              <i
-                id="bar"
-                className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-              ></i>
+            <div>
+              <i id="bar" className={"fas fa-bars"}></i>
             </div>
             <div>
-              <ul
-                id="navbar"
-                className={this.state.clicked ? "#navbar active" : "navbar"}
-              >
-                <li>
-                  <h1>
-                    לביטחונך האישי השאלון מאובטח וייסגר תוך <span>10</span>{" "}
-                    דקות*
-                  </h1>
-                </li>
+              <ul id="navbar">
+                <li></li>
                 <li>
                   <Link to="/about">מי אנחנו</Link>
                 </li>
@@ -42,9 +31,9 @@ class NavBar extends Component {
               </ul>
             </div>
           </div>
-          <div className="lis">
+          {/* <div className="lis">
             <Link to="/">לתחילת השאלון</Link>
-          </div>
+          </div> */}
 
           <div style={{ height: "80px", width: "80px" }}>
             <img src={aboutImg} className="logo" alt="logo" />

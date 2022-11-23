@@ -1,3 +1,4 @@
+import { StylesContext } from "@material-ui/styles";
 import React, { useState } from "react";
 import SendMsg from "../SendMsg";
 
@@ -12,7 +13,7 @@ const SecondStage = () => {
 
   return (
     <div>
-      <h1>לפרוש כנפיים ולעוף</h1>
+      <h1 className="only">לפרוש כנפיים ולעוף</h1>
       {showSummery ? (
         <p className="aboutit">
           עושה רושם שיש התנהגויות במערכת היחסים הזוגית שפוגעות בך, אך לא בהכרח

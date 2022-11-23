@@ -26,7 +26,7 @@ function Footer() {
             className="emergencyExit false wingsBtn"
             onClick={() => emergencyExit()}
           >
-            לחצי לסגירת הטופס
+            לחצי לסגירת השאלון
           </button>
         </div>
         {/* </div>
