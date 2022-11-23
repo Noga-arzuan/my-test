@@ -157,6 +157,8 @@ Link {
   color: #de8585;
   font-size: 16px;
   line-height: 22px;
+  margin-left: 30px;
+  margin-right: 30px;
   /* margin: 0px 100px 100px 100px; */
   /* padding: 20; */
 }
