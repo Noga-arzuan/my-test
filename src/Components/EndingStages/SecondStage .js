@@ -1,3 +1,4 @@
+import { StylesContext } from "@material-ui/styles";
 import React, { useState } from "react";
 import SendMsg from "../SendMsg";
 
@@ -12,19 +13,20 @@ const SecondStage = () => {
 
   return (
     <div>
-      <h1>לפרוש כנפיים ולעוף</h1>
+      <h1 className="only">לפרוש כנפיים ולעוף</h1>
       {showSummery ? (
-        <p className="about">
+        <p className="aboutit">
           עושה רושם שיש התנהגויות במערכת היחסים הזוגית שפוגעות בך, אך לא בהכרח
           מדובר בסימני אזהרה. חשוב לדבר עם בן הזוג ולהבהיר לו מה מתאים לך ומה
           צריך להשתנות. תשמעי גם את הצד שלו, כי תקשורת טובה היא אבן היסוד של
           מערכת יחסים בריאה. כמו כן מומלץ ללמוד עוד על ניהול זוגיות ומהם הסימנים
           של זוגיות פוגענית.
           <p>להעמקת הידע שלך בנושא זוגיות בריאה היכנסי לאתר משרד הרווחה</p>
-          <a href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter">
+          <a href="https://www.gov.il/he/Departments/General/molsa-118">
             לאתר משרד הרווחה
           </a>
           <br></br>
+          <p></p>
           בכל זאת חוששת שאת במערכת יחסים פוגענית? כאן מחכה לך שליחת הודעה לחבר/ה
           קרוב/ה
           <button

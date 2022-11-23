@@ -19,17 +19,23 @@ function About() {
           הסתמכות על המידע המופיע באתר זה הנה על אחריות המשתמשת. תכני אתר זה
           מנוסחים בלשון נקבה, אך מיועדים לכל המינים. שימוש באתר זה מעיד על
           הסכמתך לתנאים אלו.
+          <h5>אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"</h5>
         </p>
-        <h6>אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"</h6>
         <div className="about">
           <h6>להעמקת הידע שלך בנושא זוגיות בריאה היכנסי</h6>
         </div>
         <a
           className="contact"
-          href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter"
+          href="https://www.gov.il/he/Departments/General/molsa-118"
         >
           לאתר משרד הרווחה
         </a>
+        <h6 className="footer">
+          ליצירת קשר:
+          <a className="footer" href="mailto:wingsforyou2022@gmail.com">
+            wingsforyou2022@gmail
+          </a>
+        </h6>
         <div>
           <img src={homeImg} className="homeImg" alt="super women" />
         </div>

@@ -21,7 +21,8 @@ const ThirdStage = () => {
           <br></br> טוב שאת פה. אל תתעלמי מהנורות האדומות. אף מערכת יחסים אינה
           מושלמת, אבל במערכת יחסים בריאה לא תמצאי התנהגויות פוגעות. חשוב שתשוחחי
           עם אדם מחוץ למערכת היחסים ושתפי במה שעובר עלייך. הנה כמה אפשרויות
-          שיכולות לעזור לך: :<br />
+          שיכולות לעזור לך:
+          <br />
           <button
             type="button"
             class="btn btn-link sendBtn wingsBtn"
@@ -32,7 +33,7 @@ const ThirdStage = () => {
           <br />
           <br />
           להעמקת הידע שלך בנושא זוגיות בריאה היכנסי{" "}
-          <a href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter">
+          <a href="https://www.gov.il/he/Departments/General/molsa-118">
             לאתר משרד הרווחה
           </a>
         </p>

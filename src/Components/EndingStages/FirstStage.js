@@ -11,25 +11,26 @@ const FirstStage = () => {
   };
 
   return (
-    <div className="sumery">
-      {/* <h1 className="header">לפרוש כנפיים ולעוף</h1> */}
-      {showSummery ? (
-        <h1>
-          <br></br> הכל בסדר :) <br></br> עושה רושם שאת במערכת יחסים בריאה{" "}
-          <br></br>
-          אבל אם יש לך תחושה שחברה או מכרה שלך נמצאת בזוגיות שפוגעת בה - את
-          מוזמנת ללחוץ על כפתור השיתוף <br></br>
-          <br></br>
-          להעמקת הידע שלך בנושא זוגיות בריאה היכנסי
-          <br></br>
-          <a href="https://govextra.gov.il/molsa/domesticviolence/home/home/#CallCenter">
-            {" "}
-            לאתר משרד הרווחה
-          </a>
-        </h1>
-      ) : (
-        <SendMsg msg={msg} />
-      )}
+    <div className={["item_text_wrapper", "border"]}>
+      <div className={["sumery"]}>
+        {/* <h1 className="header">לפרוש כנפיים ולעוף</h1> */}
+        {showSummery ? (
+          <h1 className="only">
+            <br></br> הכל בסדר :) <br></br> עושה רושם שאת במערכת יחסים בריאה אבל
+            אם יש לך תחושה שחברה או מכרה שלך נמצאת בזוגיות שפוגעת בה - את מוזמנת
+            ללחוץ על כפתור השיתוף <br></br>
+            <br></br>
+            להעמקת הידע שלך בנושא זוגיות בריאה היכנסי
+            <br></br>
+            <a href="https://www.gov.il/he/Departments/General/molsa-118">
+              {" "}
+              לאתר משרד הרווחה
+            </a>
+          </h1>
+        ) : (
+          <SendMsg msg={msg} />
+        )}
+      </div>
     </div>
   );
 };

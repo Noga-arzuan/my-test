@@ -19,14 +19,14 @@ function Footer() {
     <div classNme={["footer-copyright"]}>
       <div className={["nav-wrapper", "timerNote", "middle"]}>
         <h1 className="close">
-          לביטחונך האישי השאלון מאובטח וייסגר תוך <span>10</span> דקות*
+          לביטחונך האישי השאלון מאובטח וייסגר תוך <span>10</span> דקות
         </h1>
         <div className="emergency">
           <button
             className="emergencyExit false wingsBtn"
             onClick={() => emergencyExit()}
           >
-            לחצי לסגירת הטופס
+            לחצי לסגירת השאלון
           </button>
         </div>
         {/* </div>

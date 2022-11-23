@@ -30,16 +30,25 @@ function Home() {
           מנוסחים בלשון נקבה, אך מיועדים לכל המינים. שימוש באתר זה מעיד על
           הסכמתך לתנאים אלו.
         </p>
-        <h6> אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"</h6>
+        <h6 className="footer">
+          אתר זה פותח בהשראת השתתפות בהאקתון ע"ש מיכל סלה "Safe@Home"
+        </h6>
       </div>
       <div
         className="
       credit"
       >
         <h6 className="footer">Copyright © 2021 Wings. All rights reserved</h6>
-        <a style={{ fontSize: 5 }} href="https://www.freepik.com">
-          designed by Freepik - Freepik.com
-        </a>
+        <h6 className="footer">
+          <a className="footer" href="mailto:wingsforyou2022@gmail.com">
+            wingsforyou2022@gmail
+          </a>
+        </h6>
+        <h6 className="footer">
+          <a style={{ fontSize: 5 }} href="https://www.freepik.com">
+            designed by Freepik - Freepik.com
+          </a>
+        </h6>
       </div>
     </div>
   );
