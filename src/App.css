@@ -394,10 +394,10 @@ h6 {
   /* padding: 5%; */
   width: 90%;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   border-color: #500a0a;
   border-width: 2px;
-  line-height: 50px;
+  /* line-height: 10px; */
   justify-content: center;
   margin-top: 0px;
   margin-left: 30px;
@@ -560,7 +560,7 @@ h6 {
   }
   .only {
     font-size: 40px;
-    line-height: 41px;
+    /* line-height: 41px; */
     margin-top: 10px;
     margin-bottom: 13px;
   }
