@@ -31,7 +31,7 @@ export const questions = [
   },
 
   {
-    questionText: "אני יודעת שלא משנה מה אעשה, בן הזוג שלי יתמוך בי",
+    questionText: "אני יודעת שלא משנה מה אעשה, בן זוגי יתמוך בי",
     answerOptions: [
       { answerText: " תומך לגמרי", isCorrect: false },
       { answerText: " לא תומך בכלל", isCorrect: true },
