@@ -571,6 +571,8 @@ h6 {
     justify-content: right;
     font-size: 12px;
     text-align: right;
+    margin-bottom: 0px;
+    margin-top: 0px;
     /* font-weight: bold; */
     position: static;
     margin-right: 30px;
